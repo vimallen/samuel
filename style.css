@@ -3569,3 +3569,37 @@ html.flexbox {
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+body {
+  background-color: #1C1C1C;
+  width: 80%;
+  margin: auto;
+  padding-top: 0.5em; }
+
+body {
+  font-family: "Open Sans", Helvetica, serif;
+  color: #BDBDBD; }
+
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+/* =Colours	*/
+/* deep red	*/
+/* electric blue	*/
+/*	orange */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #fcd9b7;
+  font-weight: normal; }
