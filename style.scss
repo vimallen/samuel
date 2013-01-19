@@ -1,0 +1,32 @@
+/*
+Theme Name: 	Samuel Tweed Theme
+Theme URI: 		http://www.daveallengraphics.com
+Description: 	Theme for Samuel Tweed Fabrics Ltd
+Version: 		1.0
+Author: 		Dave Allen	
+Author URI: 	http://www.daveallengraphics.com
+Tags: 			dark, simple
+*/
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ * 
+ * sass --watch style.scss:style.min.css --style compressed
+ * 
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "inuit.css/inuit";
+
+
+/**
+ * She’s all yours, cap’n... Begin importing your stuff here.
+ */
