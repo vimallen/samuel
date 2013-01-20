@@ -20,11 +20,19 @@ body 	{
 
 @media only screen and (min-width: 37.5em) {
 
+#menu-nav-main 	{
+				float: right;
+				margin-top: -6em;
+				clear: both;
+
+}
+
+
 #menu-nav-main  {
     list-style:none;
     margin-left:0;
     @extend .cf;
-    margin-top: 1.5em;
+    margin-top: -6em;
 
     > li{
 
@@ -37,6 +45,17 @@ body 	{
         }
     }
 }
+
+#searchform     {
+                text-align: centre;
+                font-size: 0.75em;
+}
+
+
+.screen-reader-text {
+    margin-right: 12em; }
+
+
 
 }
 

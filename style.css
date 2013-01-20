@@ -3578,15 +3578,27 @@ body {
 /*     =Media queries----------------------------------------- */
 @media only screen and (min-width: 37.5em) {
   #menu-nav-main {
+    float: right;
+    margin-top: -6em;
+    clear: both; }
+
+  #menu-nav-main {
     list-style: none;
     margin-left: 0;
-    margin-top: 1.5em; }
+    margin-top: -6em; }
     #menu-nav-main > li,
     #menu-nav-main > li > a {
       display: inline-block;
       *display: inline;
       zoom: 1;
-      padding-right: 0.3em; } }
+      padding-right: 0.3em; }
+
+  #searchform {
+    text-align: centre;
+    font-size: 0.75em; }
+
+  .screen-reader-text {
+    margin-right: 12em; } }
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 87.5em) {
