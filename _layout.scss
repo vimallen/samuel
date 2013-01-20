@@ -4,3 +4,70 @@ body 	{
 		margin: auto;
         padding-top: 0.5em;
 }
+
+/*     =Media queries----------------------------------------- */
+
+
+
+@media only screen and (min-width: 30em) {
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 37.5em) {
+
+#menu-nav-main  {
+    list-style:none;
+    margin-left:0;
+    @extend .cf;
+    margin-top: 1.5em;
+
+    > li{
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+            padding-right: 0.3em;
+        }
+    }
+}
+
+}
+
+
+
+@media only screen and (min-width: 48em) {
+
+
+}
+
+
+@media only screen and (min-width: 64em) {
+
+
+}
+
+
+@media only screen and (min-width: 78.75em) {
+
+
+}
+
+
+
+/* WIDESCREEN */
+
+/* Increased body size for legibility */
+
+@media only screen and (min-width: 87.5em) {
+
+     body {font-size:120%;} 
+	
+}
+

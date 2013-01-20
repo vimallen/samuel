@@ -3575,6 +3575,23 @@ body {
   margin: auto;
   padding-top: 0.5em; }
 
+/*     =Media queries----------------------------------------- */
+@media only screen and (min-width: 37.5em) {
+  #menu-nav-main {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 1.5em; }
+    #menu-nav-main > li,
+    #menu-nav-main > li > a {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      padding-right: 0.3em; } }
+/* WIDESCREEN */
+/* Increased body size for legibility */
+@media only screen and (min-width: 87.5em) {
+  body {
+    font-size: 120%; } }
 body {
   font-family: "Open Sans", Helvetica, serif;
   color: #BDBDBD; }
