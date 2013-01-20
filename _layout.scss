@@ -5,6 +5,17 @@ body 	{
         padding-top: 1em;
 }
 
+
+#menu-nav-main d 	{
+				list-style-type: none;
+				margin-left: -2em;	
+}
+
+#menu-nav-main li 	{
+				list-style-type: none;
+				padding-bottom: 0.5em;	
+}
+
 /*     =Media queries----------------------------------------- */
 
 
@@ -23,7 +34,7 @@ body 	{
 #menu-nav-main 	{
 				float: right;
 				margin-top: -6em;
-				clear: both;
+				
 
 }
 

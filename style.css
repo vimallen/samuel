@@ -3575,12 +3575,19 @@ body {
   margin: auto;
   padding-top: 1em; }
 
+#menu-nav-main d {
+  list-style-type: none;
+  margin-left: -2em; }
+
+#menu-nav-main li {
+  list-style-type: none;
+  padding-bottom: 0.5em; }
+
 /*     =Media queries----------------------------------------- */
 @media only screen and (min-width: 37.5em) {
   #menu-nav-main {
     float: right;
-    margin-top: -6em;
-    clear: both; }
+    margin-top: -6em; }
 
   #menu-nav-main {
     list-style: none;
