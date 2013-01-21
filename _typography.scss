@@ -55,3 +55,23 @@ h6 					{
 				-o-transition: all 0.4s ease-in-out;
 				transition: all 0.4s ease-in-out;
 }
+
+/* 	The big message on the home page*/
+
+h2.message  {	/* 	The big message on the home page*/
+			font-family: "Times", Times New Roman, Georgia, serif;
+			font-style: italic;	
+			font-size: 1.75em;
+			color: $accentcolor; 
+			margin: 0 0 2em 0;
+			padding: 1em 0 0 0;
+			border-bottom: 1px dashed #fff;
+			font-weight: normal;
+			clear: both;
+}
+
+
+
+
+
+
