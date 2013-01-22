@@ -47,6 +47,8 @@ h6 					{
 
 .menu a:hover	{
 				background-color: $hovercolor;
+				color: white;
+				text-decoration: none;
 				-webkit-border-radius: 2px;
 				-moz-border-radius: 2px;
 				border-radius: 2px;
@@ -55,6 +57,14 @@ h6 					{
 				-o-transition: all 0.4s ease-in-out;
 				transition: all 0.4s ease-in-out;
 }
+
+/*	=Links-global
+-----------------	*/
+
+a, a:active, a:visited { color: #66cccc; }
+a:hover { color: #981405; text-decoration: underline; }
+
+a	{text-decoration:none;}
 
 /* 	The big message on the home page*/
 
