@@ -68,6 +68,17 @@
 
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
+
+        /**
+        Adding a parameter of false puts the script in the head, where Modernizr needs to be, for example. 
+        Adding true puts the script before the closing tag.
+        **/
+
+		wp_register_script( 'modernizr', get_template_directory_uri().'/js/modernizr-2.6.2.js', array(), '2.6.2', false );
+		wp_enqueue_script( 'modernizr' );
+
+		wp_register_script( 'respond', get_template_directory_uri().'/js/respond.min.js', array(), '1.1.0', true );
+		wp_enqueue_script( 'respond' );
 	}	
 
 	/* ========================================================================================================================
