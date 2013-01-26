@@ -3583,6 +3583,10 @@ body {
   list-style-type: none;
   padding-bottom: 0.5em; }
 
+footer {
+  border-top: 1px dashed white;
+  padding-top: 1em; }
+
 /*  =Media queries
 ----------------------------------------- */
 @media only screen and (min-width: 48em) {
@@ -3711,3 +3715,7 @@ h2.message {
   border-bottom: 1px dashed white;
   font-weight: normal;
   clear: both; }
+
+footer p {
+  font-size: 0.75em;
+  margin-bottom: 0; }

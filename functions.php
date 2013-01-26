@@ -39,6 +39,20 @@
 
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
 
+	/* Remove links to image file pages for added images */
+
+	add_filter( 'the_content', 'attachment_image_link_remove_filter' );
+	function attachment_image_link_remove_filter( $content ) {
+	$content =
+	preg_replace(
+	array('{<a(.*?)(wp-att|wp-content/uploads)[^>]*><img}',
+	'{ wp-image-[0-9]*" /></a>}'),
+	array('<img','" />'),
+	$content
+	);
+	return $content;
+ }
+
 	/* ========================================================================================================================
 	
 	Custom Post Types - include custom post types and taxonimies here e.g.
