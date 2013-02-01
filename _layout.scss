@@ -8,13 +8,22 @@ body 	{
 
 #menu-nav-main-1    {
                 list-style-type: none;
-                margin-left: -2em;  
+                margin-left: 2em;  
 }
 
 
 #menu-nav-main li 	{
 				list-style-type: none;
-				padding-bottom: 0.5em;	
+				padding-bottom: 1.5em;	
+               
+
+}
+
+
+.responsiveSelectFullMenu li    {
+                                padding-bottom: 0.5em; 
+
+                                                                        
 }
 
 footer  {
@@ -51,8 +60,6 @@ footer  {
 #menu-nav-main-1  {
                 float: left;
                 padding-top: 6em;
-
-
 }
 
 
@@ -92,8 +99,6 @@ footer  {
                 float: right;
                 margin-top: -6em;
                 padding-top: 0;
-                
-
 }
 
 
