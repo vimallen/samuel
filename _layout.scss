@@ -6,14 +6,7 @@ body 	{
 }
 
 
-
-
-
-
-
-
-
-#menu-nav-main    {
+#menu-nav-main-1    {
                 list-style-type: none;
                 margin-left: -2em;  
 }
@@ -53,7 +46,11 @@ footer  {
 
 @media only screen and (min-width: 48em) {
 
-#menu-nav-main  {
+
+//menu-nav-main-1
+
+
+#menu-nav-main-1  {
                 float: left;
                 padding-top: 6em;
 
@@ -61,7 +58,7 @@ footer  {
 }
 
 
-#menu-nav-main  {
+#menu-nav-main-1  {
     list-style:none;
     margin-left:0;
     @extend .cf;
@@ -93,7 +90,7 @@ footer  {
 
 
 @media only screen and (min-width: 64em) {
-#menu-nav-main  {
+#menu-nav-main-1  {
                 float: right;
                 margin-top: -6em;
                 padding-top: 0;
@@ -102,7 +99,7 @@ footer  {
 }
 
 
-#menu-nav-main  {
+#menu-nav-main-1  {
     list-style:none;
     margin-left:0;
     @extend .cf;
