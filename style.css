@@ -3592,6 +3592,9 @@ footer {
 
 /*  =Media queries
 ----------------------------------------- */
+@media only screen and (min-width: 30em) {
+  header {
+    margin-bottom: 2em; } }
 @media only screen and (min-width: 48em) {
   #menu-nav-main-1 {
     float: left;
