@@ -3590,6 +3590,9 @@ footer {
   border-top: 1px dashed white;
   padding-top: 1em; }
 
+time p {
+  padding-bottom: 1em; }
+
 /*  =Media queries
 ----------------------------------------- */
 @media only screen and (min-width: 30em) {
@@ -3721,6 +3724,11 @@ h2.message {
   border-bottom: 1px dashed white;
   font-weight: normal;
   clear: both; }
+
+time {
+  color: #829256;
+  padding-bottom: 10px;
+  display: inline-block; }
 
 footer p {
   font-size: 0.75em;
