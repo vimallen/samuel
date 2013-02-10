@@ -3606,7 +3606,16 @@ time p {
 ----------------------------------------- */
 @media only screen and (min-width: 30em) {
   header {
-    margin-bottom: 2em; } }
+    margin-bottom: 2em; }
+
+  #menu-nav-main-1 {
+    list-style-type: none;
+    margin-left: 0em; }
+
+  .main.intro h2 {
+    clear: both; }
+
+  /* Keeps the title left at tablet sizes */ }
 /*  =Action
 ----------- */
 @media only screen and (min-width: 48em) {
