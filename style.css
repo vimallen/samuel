@@ -3586,9 +3586,18 @@ body {
 .responsiveSelectFullMenu li {
   padding-bottom: 0.5em; }
 
+/* =Images
+---------- */
+img {
+  border: 1px solid darkgrey; }
+
+header img {
+  border: none; }
+
 footer {
   border-top: 1px dashed white;
-  padding-top: 1em; }
+  padding-top: 1em;
+  clear: both; }
 
 time p {
   padding-bottom: 1em; }
@@ -3598,6 +3607,8 @@ time p {
 @media only screen and (min-width: 30em) {
   header {
     margin-bottom: 2em; } }
+/*  =Action
+----------- */
 @media only screen and (min-width: 48em) {
   #menu-nav-main-1 {
     float: left;
@@ -3619,7 +3630,10 @@ time p {
     font-size: 0.75em; }
 
   .screen-reader-text {
-    margin-right: 12em; } }
+    margin-right: 12em; }
+
+  .intro p {
+    padding-right: 25%; } }
 @media only screen and (min-width: 64em) {
   #menu-nav-main-1 {
     float: right;

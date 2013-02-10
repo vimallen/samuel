@@ -25,9 +25,20 @@ body 	{
                                                                       
 }
 
+/* =Images
+---------- */
+img {
+    border: 1px solid darkgray;
+}
+
+header img  {
+            border: none;
+}
+
 footer  {
         border-top: 1px dashed #fff;
         padding-top: 1em;
+        clear: both;
 }
 
 
@@ -58,7 +69,8 @@ time p    {
 
 }
 
-
+/*  =Action
+----------- */
 
 @media only screen and (min-width: 48em) {
 
@@ -98,10 +110,16 @@ time p    {
                     margin-right: 12em; 
 }
 
+
+.intro  p   {
+            padding-right: 25%;
+}
+
 }
 
 
 @media only screen and (min-width: 64em) {
+
 #menu-nav-main-1  {
                 float: right;
                 margin-top: -6em;
