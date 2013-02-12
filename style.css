@@ -3602,6 +3602,9 @@ footer {
 time p {
   padding-bottom: 1em; }
 
+#meteor-slideshow {
+  border: 3px solid #333333; }
+
 /*  =Media queries
 ----------------------------------------- */
 @media only screen and (min-width: 30em) {
@@ -3735,7 +3738,13 @@ a:hover {
 a {
   text-decoration: none; }
 
-/* 	The big message on the home page*/
+.main-home h2 {
+  color: #f8993c;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
+  border-bottom: dashed 1px white; }
+
+/* 	The big message on the home page (when in use)*/
 h2.message {
   /* 	The big message on the home page*/
   font-family: "Times", Times New Roman, Georgia, serif;

@@ -66,7 +66,15 @@ a:hover { color: #981405; text-decoration: underline; }
 
 a	{text-decoration:none;}
 
-/* 	The big message on the home page*/
+.main-home h2 	{
+				color: $accentcolor;
+				padding-top: 1em;
+				padding-bottom: 0.25em; 
+				border-bottom: dashed 1px white;
+
+}
+
+/* 	The big message on the home page (when in use)*/
 
 h2.message  {	/* 	The big message on the home page*/
 			font-family: "Times", Times New Roman, Georgia, serif;
