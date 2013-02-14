@@ -3619,8 +3619,6 @@ time p {
     clear: both; }
 
   /* Keeps the title left at tablet sizes */ }
-/*  =Action
------------ */
 @media only screen and (min-width: 48em) {
   #menu-nav-main-1 {
     float: left;
@@ -3646,9 +3644,6 @@ time p {
 
   .intro p {
     padding-right: 25%; } }
-.contact {
-  color: pink; }
-
 @media only screen and (min-width: 64em) {
   #menu-nav-main-1 {
     float: right;
@@ -3759,6 +3754,9 @@ h2.message {
   border-bottom: 1px dashed white;
   font-weight: normal;
   clear: both; }
+
+h4.contactHeader {
+  border-bottom: 1px dotted white; }
 
 time {
   color: #829256;

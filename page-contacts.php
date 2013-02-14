@@ -31,7 +31,7 @@
           $screenshot_url = $custom["screenshot_url"][0];
           $website_url = $custom["website_url"][0];
      ?>
-          <div class="contact g  one-quarter  lap-one-half  palm-one-whole">
+          <div class="contact g  one-third  lap-one-half  palm-one-whole">
           <h4 class="contactHeader"><?php the_title(); ?></h4>
           <a href="<?=$website_url?>"><?php the_post_thumbnail(); ?> </a>
           <?php the_content(); ?>
