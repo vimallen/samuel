@@ -16,7 +16,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="main">
+<div class="main-contacts">
 <h2><?php the_title(); ?></h2>
 <?php
           $loop = new WP_Query(array('post_type' => 'contacts',
