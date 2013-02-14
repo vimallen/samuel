@@ -3646,6 +3646,9 @@ time p {
 
   .intro p {
     padding-right: 25%; } }
+.contact {
+  color: pink; }
+
 @media only screen and (min-width: 64em) {
   #menu-nav-main-1 {
     float: right;

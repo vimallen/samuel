@@ -16,7 +16,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="main-contacts">
+<div class="main">
 <h2><?php the_title(); ?></h2>
 <?php
           $loop = new WP_Query(array('post_type' => 'contacts',
@@ -31,11 +31,13 @@
           $screenshot_url = $custom["screenshot_url"][0];
           $website_url = $custom["website_url"][0];
      ?>
-      <div class="contact">
+      <div class="island">
+          <div class="island contact"
           <h4 class="contactHeader"><?php the_title(); ?></h4>
           <a href="<?=$website_url?>"><?php the_post_thumbnail(); ?> </a>
           <?php the_content(); ?>
           </div><!--contact-->
+          </div><!--island-->
 
 <?php endwhile; ?>
 </div><!--main-->
