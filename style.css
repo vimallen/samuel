@@ -3674,7 +3674,8 @@ time p {
     font-size: 120%; } }
 body {
   font-family: "Open Sans", Helvetica, serif;
-  color: #BDBDBD; }
+  color: #BDBDBD;
+  border: 0; }
 
 /*
 
