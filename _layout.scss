@@ -25,6 +25,15 @@ body 	{
                                                                       
 }
 
+
+
+
+.contact-single     {
+                    min-height: 22em; /* Cross broswr compatible. Via ccs-tricks */ 
+                    height:auto !important; 
+                    height: 22em;
+}
+
 /* =Images
 ---------- */
 img {
