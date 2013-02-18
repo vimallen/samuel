@@ -3592,6 +3592,9 @@ body {
   height: auto !important;
   height: 22em; }
 
+.main-home {
+  padding-top: 1em; }
+
 /* =Images
 ---------- */
 img {
