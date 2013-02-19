@@ -75,6 +75,11 @@ a	{text-decoration:none;}
 
 }
 
+.module-home  	{
+				a[href]:after {content:" »";
+}
+}
+
 /* 	The big message on the home page (when in use)*/
 
 h2.message  {	/* 	The big message on the home page*/
@@ -92,6 +97,7 @@ h2.message  {	/* 	The big message on the home page*/
 .underline-dashed	{
 					border-bottom: 1px dashed #fff;				
 					padding-bottom: 0.23em;
+					margin-right: 2em;	
 					
 }
 time  	{

@@ -28,7 +28,7 @@
      ?>
      <div class="module-home g one-quarter lap-one-half palm-one-whole">
           <h3 class="underline-dashed"><?php the_title(); ?></h3>
-          <a href="<?=$website_url?>"><?php the_post_thumbnail(); ?> </a>
+          <?php the_post_thumbnail(); ?> </a>
   <?php the_content(); ?>        
 </div><!-- module -->
 

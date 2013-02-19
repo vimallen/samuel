@@ -3595,6 +3595,9 @@ body {
 .main-home {
   padding-top: 2em; }
 
+.module-home {
+  padding-top: 2em; }
+
 /* =Images
 ---------- */
 img {
@@ -3752,6 +3755,9 @@ a {
   padding-bottom: 0.25em;
   border-bottom: dashed 1px white; }
 
+.module-home a[href]:after {
+  content: " »"; }
+
 /* 	The big message on the home page (when in use)*/
 h2.message {
   /* 	The big message on the home page*/
@@ -3767,7 +3773,8 @@ h2.message {
 
 .underline-dashed {
   border-bottom: 1px dashed white;
-  padding-bottom: 0.23em; }
+  padding-bottom: 0.23em;
+  margin-right: 2em; }
 
 time {
   color: #829256;
