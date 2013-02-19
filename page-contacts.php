@@ -33,7 +33,7 @@
      ?>
              
           <div class="contact-single g one-third lap-one-half palm-one-whole">
-          <h4 class="contactHeader"><?php the_title(); ?></h4>
+          <h4 class="underline-dashed"><?php the_title(); ?></h4>
           <a href="<?=$website_url?>"><?php the_post_thumbnail(); ?> </a>
           <?php the_content(); ?>
           </div><!--contact-->

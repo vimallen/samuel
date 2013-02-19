@@ -12,6 +12,7 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 <div class="main-home">
+  <?php the_content(); ?> 
 <?php
           $loop = new WP_Query(array('post_type' => 'module-home',
           'posts_per_page' => 10,
@@ -25,8 +26,8 @@
           $screenshot_url = $custom["screenshot_url"][0];
           $website_url = $custom["website_url"][0];
      ?>
-     <div class="module-home media g one-half lap-one-half palm-one-whole">
-          <h4 class="contactHeader"><?php the_title(); ?></h4>
+     <div class="module-home g one-quarter lap-one-half palm-one-whole">
+          <h3 class="underline-dashed"><?php the_title(); ?></h3>
           <a href="<?=$website_url?>"><?php the_post_thumbnail(); ?> </a>
   <?php the_content(); ?>        
 </div><!-- module -->

@@ -89,8 +89,9 @@ h2.message  {	/* 	The big message on the home page*/
 			clear: both;
 }
 
-h4.contactHeader	{
-					border-bottom: 1px dotted #fff;				
+.underline-dashed	{
+					border-bottom: 1px dashed #fff;				
+					padding-bottom: 0.23em;
 					
 }
 time  	{

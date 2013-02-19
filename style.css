@@ -3593,7 +3593,7 @@ body {
   height: 22em; }
 
 .main-home {
-  padding-top: 1em; }
+  padding-top: 2em; }
 
 /* =Images
 ---------- */
@@ -3765,8 +3765,9 @@ h2.message {
   font-weight: normal;
   clear: both; }
 
-h4.contactHeader {
-  border-bottom: 1px dotted white; }
+.underline-dashed {
+  border-bottom: 1px dashed white;
+  padding-bottom: 0.23em; }
 
 time {
   color: #829256;
