@@ -134,7 +134,32 @@
 
 		wp_register_script( 'respond', get_template_directory_uri().'/js/respond.min.js', array(), '1.1.0', true );
 		wp_enqueue_script( 'respond' );
+
 	}	
+
+//	Customising the dashboard
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login div#login h1 a {
+            background-image: url(<?php echo get_bloginfo( 'template_directory' ) ?>/images/logo-stweed-login.png);
+            padding-bottom: 60px;
+            background-size: 70%;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+
+function my_login_logo_url() {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 	/* ========================================================================================================================
 	
