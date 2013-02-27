@@ -3579,8 +3579,11 @@ body {
   list-style-type: none;
   margin-left: 2em; }
 
-.responsiveSelectFullMenu li {
-  padding-bottom: 0.5em; }
+.responsiveSelectContainer select.responsiveMenuSelect, select.responsiveMenuSelect {
+  background-color: #F8993C;
+  /*  orange */
+  border-style: none;
+  margin-bottom: 2em; }
 
 .contact-single {
   min-height: 22em;
