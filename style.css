@@ -3618,7 +3618,7 @@ time p {
 
 /*  =Media queries
 ----------------------------------------- */
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 480px) {
   header {
     margin-bottom: 2em; }
 
@@ -3630,7 +3630,7 @@ time p {
     clear: both; }
 
   /* Keeps the title left at tablet sizes */ }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   #menu-nav-main-1 {
     float: left;
     padding-top: 6em; }
@@ -3655,7 +3655,7 @@ time p {
 
   .intro p {
     padding-right: 25%; } }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   #menu-nav-main-1 {
     float: right;
     margin-top: -6em;
@@ -3680,7 +3680,7 @@ time p {
     margin-right: 12em; } }
 /* WIDESCREEN */
 /* Increased body size for legibility */
-@media only screen and (min-width: 87.5em) {
+@media only screen and (min-width: 1400px) {
   body {
     font-size: 120%; } }
 body {

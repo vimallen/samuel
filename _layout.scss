@@ -66,7 +66,7 @@ time p    {
 
 
 
-@media only screen and (min-width: 30em) /* 480px */ {
+@media only screen and (min-width: 480px) /* 30em */ {
 
     header {
             margin-bottom: 2em;
@@ -83,7 +83,7 @@ time p    {
 
 
 
-@media only screen and (min-width: 37.5em) /* 600px */ {
+@media only screen and (min-width: 600px) /* 37.5em */ {
 
 
 
@@ -91,7 +91,7 @@ time p    {
 
 
 
-@media only screen and (min-width: 48em) /* 768px */{
+@media only screen and (min-width: 768px) /* 48em */{
 
 
 
@@ -140,7 +140,7 @@ time p    {
 
 
 
-@media only screen and (min-width: 64em) /* 1024px */ {
+@media only screen and (min-width: 1024px) /* 64em */ {
 
 #menu-nav-main-1  {
                 float: right;
@@ -180,7 +180,7 @@ time p    {
 }
 
 
-@media only screen and (min-width: 78.75em) /* 1260px */ {
+@media only screen and (min-width: 1260px) /* 78.75em */ {
 
 
 }
@@ -191,7 +191,7 @@ time p    {
 
 /* Increased body size for legibility */
 
-@media only screen and (min-width: 87.5em) /* 1400px */ {
+@media only screen and (min-width: 1400px) /* 87.5em */ {
 
      body {font-size:120%;} 
 	
