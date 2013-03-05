@@ -31,33 +31,33 @@ h6 					{
 	font-weight: normal;
 }
 
-/*	=Links-main nav
+/*	=Links-main nav Moved to layout.scss
 -------------------	*/
-.menu li	{
-			margin: 0 0.25em;	
+// .menu li	{
+// 			margin: 0 0.25em;	
 			
-}
+// }
 
-.menu a	{
-					color: #fff;
-					text-decoration: none;
-					border-bottom: 2px solid $hovercolor;
-					text-transform: uppercase;
-}
+// .menu a	{
+// 					color: #fff;
+// 					text-decoration: none;
+// 					border-bottom: 2px solid $hovercolor;
+// 					text-transform: uppercase;
+// }
 
 
-.menu a:hover	{
-				background-color: $hovercolor;
-				color: white;
-				text-decoration: none;
-				-webkit-border-radius: 2px;
-				-moz-border-radius: 2px;
-				border-radius: 2px;
-				-webkit-transition: all 0.4s ease-in-out;
-				-moz-transition: all 0.4s ease-in-out;
-				-o-transition: all 0.4s ease-in-out;
-				transition: all 0.4s ease-in-out;
-}
+// .menu a:hover	{
+// 				background-color: $hovercolor;
+// 				color: white;
+// 				text-decoration: none;
+// 				-webkit-border-radius: 2px;
+// 				-moz-border-radius: 2px;
+// 				border-radius: 2px;
+// 				-webkit-transition: all 0.4s ease-in-out;
+// 				-moz-transition: all 0.4s ease-in-out;
+// 				-o-transition: all 0.4s ease-in-out;
+// 				transition: all 0.4s ease-in-out;
+// }
 
 /*	=Links-global
 -----------------	*/
