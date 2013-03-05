@@ -3622,30 +3622,81 @@ time p {
   header {
     margin-bottom: 2em; }
 
-  #menu-nav-main-1 {
-    list-style-type: none;
-    margin-left: 0em; }
-
   .main.intro h2 {
     clear: both; }
 
   /* Keeps the title left at tablet sizes */ }
-@media only screen and (min-width: 768px) {
-  #menu-nav-main-1 {
-    float: left;
-    padding-top: 6em; }
-
+@media only screen and (min-width: 600px) {
   #menu-nav-main-1 {
     list-style: none;
-    margin-left: 0;
-    margin-top: -6em; }
-    #menu-nav-main-1 > li,
-    #menu-nav-main-1 > li > a {
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      padding-right: 0.3em; }
+    font-weight: bold;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 5; }
 
+  #menu-nav-main-1 li {
+    float: left;
+    margin-right: 10px;
+    position: relative; }
+
+  #menu-nav-main-1 a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    background: #333;
+    text-decoration: none; }
+
+  #menu-nav-main-1 a:hover {
+    color: #fff;
+    background: #6b0c36;
+    text-decoration: underline; }
+
+  #menu-nav-main-1 ul {
+    background: #fff;
+    background: rgba(255, 255, 255, 0);
+    list-style: none;
+    position: absolute;
+    left: -9999px; }
+
+  #menu-nav-main-1 ul li {
+    padding-top: 1px;
+    float: none; }
+
+  #menu-nav-main-1 ul a {
+    white-space: nowrap; }
+
+  #menu-nav-main-1 li:hover ul {
+    left: 0; }
+
+  #menu-nav-main-1 li:hover a {
+    background: #6b0c36;
+    text-decoration: underline; }
+
+  #menu-nav-main-1 li:hover ul a {
+    text-decoration: none; }
+
+  #menu-nav-main-1 li:hover ul li a:hover {
+    background: #333; }
+
+  #menu-nav-main-1 ul li {
+    padding-top: 1px;
+    float: none; }
+
+  #menu-nav-main-1 ul a {
+    white-space: nowrap; }
+
+  #menu-nav-main-1 li:hover ul {
+    left: 0; }
+
+  #menu-nav-main-1 li:hover a {
+    background: #6b0c36;
+    text-decoration: underline; }
+
+  #menu-nav-main-1 li:hover ul li a:hover {
+    background: #333; } }
+@media only screen and (min-width: 768px) {
   #searchform {
     text-align: centre;
     font-size: 0.75em; }
@@ -3656,22 +3707,6 @@ time p {
   .intro p {
     padding-right: 25%; } }
 @media only screen and (min-width: 1024px) {
-  #menu-nav-main-1 {
-    float: right;
-    margin-top: -6em;
-    padding-top: 0; }
-
-  #menu-nav-main-1 {
-    list-style: none;
-    margin-left: 0;
-    margin-top: -6em; }
-    #menu-nav-main-1 > li,
-    #menu-nav-main-1 > li > a {
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      padding-right: 0.3em; }
-
   #searchform {
     text-align: centre;
     font-size: 0.75em; }
