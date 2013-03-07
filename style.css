@@ -3648,22 +3648,30 @@ time p {
   /*--- DROPDOWN ---*/
   #menu-nav-main-1 ul {
     background: #fff;
+    /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
     background: rgba(255, 255, 255, 0);
+    /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style: none;
     list-style: none;
     position: absolute;
-    left: -9999px; }
+    left: -9999px;
+    /* Hide off-screen when not needed (this is more accessible than display:none;) */ }
 
   #menu-nav-main-1 ul li {
     padding-top: 1px;
+    /* Introducing a padding between the li and the a give the illusion spaced items */
     float: none; }
 
   #menu-nav-main-1 ul a {
-    white-space: nowrap; }
+    white-space: nowrap;
+    /* Stop text wrapping and creating multi-line dropdown items */ }
 
   #menu-nav-main-1 li:hover ul {
-    left: 0; }
+    left: 0;
+    /* Bring back on-screen when needed */ }
 
   #menu-nav-main-1 li:hover a {
+    /* Here we define the most explicit hover states--what happens when you hover each individual link. */
     background: #981405;
     text-decoration: underline;
     -webkit-transition: all 0.4s ease-in-out;
