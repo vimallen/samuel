@@ -3593,6 +3593,9 @@ body {
 .module-home {
   padding-top: 2em; }
 
+.ngg-galleryoverview {
+  padding-bottom: 3em; }
+
 /* =Images
 ---------- */
 img {
@@ -3662,7 +3665,7 @@ time p {
     /* Introducing a padding between the li and the a give the illusion spaced items */
     float: none; }
 
-  #menu-nav-main-1 ul a {
+  #menu-nav-main-1 ul {
     white-space: nowrap;
     /* Stop text wrapping and creating multi-line dropdown items */ }
 
