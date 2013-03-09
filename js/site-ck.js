@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e("div.ngg-galleryoverview img").each(function(){var t=Math.random()*6-2;e(this).css({"-webkit-transform":"rotate("+t+"2deg)","-moz-transform":"rotate("+t+"2deg)"})})});

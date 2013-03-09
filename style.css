@@ -3576,8 +3576,7 @@ body {
   padding-top: 1em; }
 
 .responsiveSelectContainer select.responsiveMenuSelect, select.responsiveMenuSelect {
-  background-color: #F8993C;
-  /*  orange */
+  background-color: silver;
   border-style: none;
   margin-bottom: 2em; }
 
