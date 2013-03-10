@@ -1,5 +1,5 @@
 body 	{
-		font-family: 'Open Sans', Helvetica, serif;  
+		font-family: 'Open Sans', Helvetica, serif;
 		color: #BDBDBD;
 		border: 0;
 }
@@ -15,17 +15,17 @@ body 	{
 */
 /* =Colours	*/
 
-$hovercolor: #981405; /* deep red	*/	
+$hovercolor: #981405; /* deep red	*/
 $linkcolor:	#66CCCC;	/* electric blue	*/
 $accentcolor: #F8993C;	/*	orange */
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 					{ 
-	font-family:  "Times New Roman", Times, serif; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 					{
+	font-family:  "Times New Roman", Times, serif;
 	font-style: italic;
 	color: lighten($accentcolor, 25%);
 	font-weight: normal;
@@ -34,8 +34,8 @@ h6 					{
 /*	=Links-main nav Moved to layout.scss
 -------------------	*/
 // .menu li	{
-// 			margin: 0 0.25em;	
-			
+// 			margin: 0 0.25em;
+
 // }
 
 // .menu a	{
@@ -67,10 +67,10 @@ a:hover { color: #981405; text-decoration: underline; }
 
 a	{text-decoration:none;}
 
-.main-home h2 	{
+.main h2 	{
 				color: $accentcolor;
 				padding-top: 1em;
-				padding-bottom: 0.25em; 
+				padding-bottom: 0.25em;
 				border-bottom: dashed 1px white;
 
 }
@@ -84,9 +84,9 @@ a	{text-decoration:none;}
 
 h2.message  {	/* 	The big message on the home page*/
 			font-family: "Times", Times New Roman, Georgia, serif;
-			font-style: italic;	
+			font-style: italic;
 			font-size: 1.75em;
-			color: $accentcolor; 
+			color: $accentcolor;
 			margin: 0 0 2em 0;
 			padding: 1em 0 0 0;
 			border-bottom: 1px dashed #fff;
@@ -95,10 +95,10 @@ h2.message  {	/* 	The big message on the home page*/
 }
 
 .underline-dashed	{
-					border-bottom: 1px dashed #fff;				
+					border-bottom: 1px dashed #fff;
 					padding-bottom: 0.23em;
-					margin-right: 2em;	
-					
+					margin-right: 2em;
+
 }
 time  	{
 		color: #829256;

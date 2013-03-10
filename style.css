@@ -3589,7 +3589,7 @@ body {
 .main-home {
   padding-top: 2em; }
 
-.module-home {
+.module {
   padding-top: 2em; }
 
 .ngg-galleryoverview {
@@ -3805,7 +3805,7 @@ a:hover {
 a {
   text-decoration: none; }
 
-.main-home h2 {
+.main h2 {
   color: #f8993c;
   padding-top: 1em;
   padding-bottom: 0.25em;
