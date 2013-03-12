@@ -31,6 +31,10 @@ h6 					{
 	font-weight: normal;
 }
 
+/*	Hot pink lives! */
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
 /*	=Links-main nav Moved to layout.scss
 -------------------	*/
 // .menu li	{
