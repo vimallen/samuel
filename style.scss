@@ -3,7 +3,7 @@ Theme Name: 	Samuel Tweed Theme
 Theme URI: 		http://www.daveallengraphics.com
 Description: 	Theme for Samuel Tweed Fabrics Ltd
 Version: 		1.0
-Author: 		Dave Allen	
+Author: 		Dave Allen
 Author URI: 	http://www.daveallengraphics.com
 Tags: 			dark, simple
 */
@@ -12,9 +12,9 @@ Tags: 			dark, simple
     STYLE.CSS
 \*------------------------------------*/
 /**
- * 
+ *
  * sass --watch style.scss:style.min.css --style compressed
- * 
+ *
  * Here we pull in some variables, include the inuit.css framework, then add our
  * project-specific components afterwards.
  */
@@ -32,3 +32,5 @@ Tags: 			dark, simple
  */
 @import "layout";
 @import "typography";
+
+
