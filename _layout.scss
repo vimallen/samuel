@@ -26,6 +26,7 @@ body 	{
 
 .module    {
                 padding-top: 2em;
+
 }
 
 .ngg-galleryoverview    {
@@ -76,6 +77,10 @@ time p    {
     header {
             margin-bottom: 2em;
     }
+
+    .module     {
+            padding-left: 1.375em;
+}
 
 /* //     #menu-nav-main-1    {
 //                 list-style-type: none;
@@ -175,7 +180,9 @@ time p    {
 
 @media only screen and (min-width: 600px) /* 37.5em */ {
 
-
+.module     {
+            padding-left: 1.375em;
+}
 
 }
 

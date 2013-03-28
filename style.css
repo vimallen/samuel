@@ -3630,6 +3630,9 @@ time p {
   header {
     margin-bottom: 2em; }
 
+  .module {
+    padding-left: 1.375em; }
+
   /* =nav */
   #menu-nav-main-1 {
     list-style: none;
@@ -3718,6 +3721,9 @@ time p {
     clear: both; }
 
   /* Keeps the title left at tablet sizes */ }
+@media only screen and (min-width: 600px) {
+  .module {
+    padding-left: 1.375em; } }
 @media only screen and (min-width: 768px) {
   #menu-nav-main-1 {
     position: absolute;
