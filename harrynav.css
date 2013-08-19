@@ -2,7 +2,7 @@
 
 
 <code><span class="code-comment">/* BE SURE TO INCLUDE THE CSS RESET FOUND IN THE DEMO PAGE'S CSS */</span>
-<span class="code-comment">/*------------------------------------*\
+
     NAV
 \*------------------------------------*/</span>
 #menu-nav-main-1{
@@ -62,10 +62,10 @@
 }
 #menu-nav-main-1 li:hover ul li a:hover{ <span class="code-comment">/* Here we define the most explicit hover states--what happens when you hover each individual link. */</span>
     background:#333;
-}</code>
+}
 
 
-<code>#menu-nav-main-1 ul li{
+#menu-nav-main-1 ul li{
     padding-top:1px; <span class="code-comment">/* Introducing a padding between the li and the a give the illusion spaced items */</span>
     float:none;
 }
@@ -74,14 +74,14 @@
 }
 #menu-nav-main-1 li:hover ul{ <span class="code-comment">/* Display the dropdown on hover */</span>
     left:0; <span class="code-comment">/* Bring back on-screen when needed */</span>
-}</code>
+}
 
-<code>#menu-nav-main-1 li:hover a{ <span class="code-comment">/* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */</span>
+#menu-nav-main-1 li:hover a{ <span class="code-comment">/* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */</span>
     background:#6b0c36;
     text-decoration:underline;
-}</code>
+}
 
-<code>#menu-nav-main-1 li:hover ul li a:hover{ <span class="code-comment">/* Here we define the most explicit hover states--what happens when you hover each individual link. */</span>
+#menu-nav-main-1 li:hover ul li a:hover{ <span class="code-comment">/* Here we define the most explicit hover states--what happens when you hover each individual link. */</span>
     background:#333;
-}</code>
+}
 

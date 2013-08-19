@@ -1,7 +1,7 @@
 body 	{
         background-color: #1C1C1C;
 		width: 80%;
-		margin: auto;
+		margin: 0 auto;
         padding-top: 1em;
 }
 
@@ -26,6 +26,7 @@ body 	{
 
 .module    {
                 padding-top: 2em;
+
 }
 
 .ngg-galleryoverview    {
@@ -76,6 +77,10 @@ time p    {
     header {
             margin-bottom: 2em;
     }
+
+    .module     {
+            padding-left: 1.375em;
+}
 
 /* //     #menu-nav-main-1    {
 //                 list-style-type: none;
@@ -175,7 +180,9 @@ time p    {
 
 @media only screen and (min-width: 600px) /* 37.5em */ {
 
-
+.module     {
+            padding-left: 1.375em;
+}
 
 }
 
@@ -222,6 +229,7 @@ time p    {
 #searchform     {
                 text-align: centre;
                 font-size: 0.75em;
+                padding-bottom: 2em;
 }
 
 
@@ -236,36 +244,7 @@ time p    {
 
 
 
-}
 
-
-
-@media only screen and (min-width: 1024px) /* 64em */ {
-
-/* // #menu-nav-main-1  {
-//                 float: right;
-//                 margin-top: -6em;
-//                 padding-top: 0;
-// }
- */
-
-/* / #menu-nav-main-1  {
-//     list-style:none;
-//     margin-left:0;
-//     @extend .cf;
-//     margin-top: -6em;
-
-//     > li{
-
-//         &,
-//         > a{
-//             display:inline-block;
-//            *display:inline;
-//             zoom:1;
-//             padding-right: 0.3em;
-//         }
-//     }
-// } */
 
 #searchform     {
                 text-align: centre;
@@ -293,7 +272,10 @@ time p    {
 
 @media only screen and (min-width: 1400px) /* 87.5em */ {
 
-     body {font-size:120%;}
+     body   {
+            font-size:120%;
+            width: 60%;
+        }
 
 }
 
