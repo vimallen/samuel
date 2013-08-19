@@ -52,7 +52,12 @@
 	);
 	return $content;
  }
+// Admin footer modification
 
+function remove_footer_admin ()
+{
+    echo '<span id="footer-thankyou">Developed by <a href="http://www.daveallengraphics.com" target="_blank">Dave Allen Graphics</a></span>';
+}
 	/* ========================================================================================================================
 
 	Custom Post Types - include custom post types and taxonimies here e.g.
@@ -211,3 +216,15 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 			</article>
 		<?php endif;
 	}
+
+
+	/*
+ * Remove the WordPress Logo from the WordPress Admin Bar
+ */
+function remove_wp_logo() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('wp-logo');
+}
+add_action( 'wp_before_admin_bar_render', 'remove_wp_logo' );
+
+
