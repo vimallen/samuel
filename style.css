@@ -3892,7 +3892,7 @@ it's only a template design
   height: 100%;
   padding: 5px;
   margin-bottom: 5px;
-  border: 1px solid white; }
+  border: 1px solid #fff; }
 
 /* IE6 will ignore this , again I hate IE6 */
 /* See also http://www.sitepoint.com/article/browser-specific-css-hacks */
@@ -3922,7 +3922,7 @@ html > body .ngg-album {
 
 .ngg-thumbnail img {
   background-color: #FFFFFF;
-  border: 1px solid darkgrey;
+  border: 1px solid #A9A9A9;
   margin: 4px 0px 4px 5px;
   padding: 4px;
   position: relative; }
@@ -3949,7 +3949,7 @@ html > body .ngg-album {
   width: 120px; }
 
 .ngg-album-compactbox .Thumb {
-  border: 1px solid black;
+  border: 1px solid #000000;
   margin: 0px !important;
   padding: 0px !important;
   width: 91px;
@@ -3989,7 +3989,7 @@ html > body .ngg-album {
 
 .ngg-gallery-thumbnail img {
   background-color: #FFFFFF;
-  border: 1px solid darkgrey;
+  border: 1px solid #A9A9A9;
   display: block;
   margin: 4px 0px 4px 5px;
   padding: 4px;
@@ -4027,7 +4027,7 @@ html > body .ngg-album {
 .ngg-navigation span.page-numbers,
 .ngg-navigation span.next,
 .ngg-navigation span.prev {
-  border: 1px solid #dddddd;
+  border: 1px solid #DDDDDD;
   margin-right: 3px;
   padding: 3px 8px;
   text-decoration: none; }
@@ -4039,7 +4039,7 @@ html > body .ngg-album {
 .ngg-navigation span.next:hover,
 .ngg-navigation span.prev:hover {
   background-color: #0066CC;
-  color: white !important;
+  color: #FFFFFF !important;
   text-decoration: none !important; }
 
 /* ----------- Image browser style -------------*/
@@ -4047,7 +4047,7 @@ html > body .ngg-album {
   text-align: center; }
 
 .ngg-imagebrowser img {
-  border: 1px solid darkgrey;
+  border: 1px solid #A9A9A9;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -4060,13 +4060,13 @@ html > body .ngg-album {
 
 .ngg-imagebrowser-nav .back {
   float: left;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDDDDD;
   margin-right: 3px;
   padding: 3px 7px; }
 
 .ngg-imagebrowser-nav .next {
   float: right;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDDDDD;
   margin-right: 3px;
   padding: 3px 7px; }
 
@@ -4131,21 +4131,21 @@ html > body .ngg-album {
   text-align: left; }
 
 .ngg-widget img {
-  border: 2px solid darkgrey;
+  border: 2px solid #A9A9A9;
   margin: 0pt 2px 2px 0px;
   padding: 1px; }
 
 /* ----------- Related images -------------*/
 .ngg-related-gallery {
   background: #F9F9F9;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #E0E0E0;
   overflow: hidden;
   margin-bottom: 1em;
   margin-top: 1em;
   padding: 5px; }
 
 .ngg-related-gallery img {
-  border: 1px solid #dddddd;
+  border: 1px solid #DDDDDD;
   float: left;
   margin: 0pt 3px;
   padding: 2px;
@@ -4153,11 +4153,11 @@ html > body .ngg-album {
   width: 50px; }
 
 .ngg-related-gallery img:hover {
-  border: 1px solid black; }
+  border: 1px solid #000000; }
 
 /* ----------- Gallery list -------------*/
 .ngg-galleryoverview ul li:before {
-  content: "" !important; }
+  content: '' !important; }
 
 .ngg-gallery-list {
   list-style-type: none;
@@ -4173,7 +4173,7 @@ html > body .ngg-album {
   overflow: hidden; }
 
 .ngg-gallery-list li a {
-  border: 1px solid #cccccc;
+  border: 1px solid #CCCCCC;
   display: block;
   padding: 2px; }
 
@@ -4181,7 +4181,7 @@ html > body .ngg-album {
   -moz-background-clip: border;
   -moz-background-inline-policy: continuous;
   -moz-background-origin: padding;
-  background: black none repeat scroll 0 0; }
+  background: #000000 none repeat scroll 0 0; }
 
 .ngg-gallery-list li img {
   height: 40px;
