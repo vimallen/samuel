@@ -501,7 +501,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -1300,7 +1300,7 @@ td {
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   /* Override this color in your theme stylesheet */ }
   .table--bordered th:empty,
   .table--bordered td:empty {
@@ -1795,7 +1795,7 @@ html.flexbox {
  * 
  */
 .options > li > a {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Extend in your theme stylesheet */
   border-width: 1px;
   border-left-width: 0; }
@@ -2043,7 +2043,7 @@ html.flexbox {
  */
 .block-list,
 .block-list > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */ }
 
 .block-list {
@@ -2080,7 +2080,7 @@ html.flexbox {
  */
 .matrix,
 .matrix > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */ }
 
 .matrix {
@@ -3608,13 +3608,13 @@ body {
 /* =Images
 ---------- */
 img {
-  border: 1px solid darkgrey; }
+  border: 1px solid darkgray; }
 
 header img {
   border: none; }
 
 footer {
-  border-top: 1px dashed white;
+  border-top: 1px dashed #fff;
   padding-top: 1em;
   clear: both; }
 
@@ -3622,7 +3622,7 @@ time p {
   padding-bottom: 1em; }
 
 #meteor-slideshow {
-  border: 3px solid #333333; }
+  border: 3px solid #333; }
 
 /*  =Media queries
 ----------------------------------------- */
@@ -3772,7 +3772,7 @@ time p {
   body {
     font-size: 120%; } }
 body {
-  font-family: "Open Sans", Helvetica, serif;
+  font-family: 'Open Sans', Helvetica, serif;
   color: #BDBDBD;
   border: 0; }
 
@@ -3844,12 +3844,12 @@ h2.message {
   color: #f8993c;
   margin: 0 0 2em 0;
   padding: 1em 0 0 0;
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dashed #fff;
   font-weight: normal;
   clear: both; }
 
 .underline-dashed {
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dashed #fff;
   padding-bottom: 0.23em;
   margin-right: 2em; }
 
