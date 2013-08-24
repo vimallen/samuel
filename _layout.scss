@@ -238,13 +238,6 @@ time p    {
 }
 
 
-.intro  p   {
-            padding-right: 25%;
-}
-
-
-
-
 
 #searchform     {
                 text-align: centre;
@@ -260,7 +253,9 @@ time p    {
 
 
 @media only screen and (min-width: 1260px) /* 78.75em */ {
-
+.intro-home p {
+            padding-right: 20em;
+}
 
 }
 

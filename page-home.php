@@ -12,7 +12,9 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
  <?php /*if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); }*/ ?>
 <div class="main">
+  <div class="intro-home">
   <?php the_content(); ?>
+</div>
 <?php
           $loop = new WP_Query(array('post_type' => 'module-home',
           'posts_per_page' => 10,
