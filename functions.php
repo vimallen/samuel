@@ -52,12 +52,22 @@
 	);
 	return $content;
  }
-// Admin footer modification
+
+ // Admin footer modification
 
 function remove_footer_admin ()
 {
-    echo '<span id="footer-thankyou">Developed by <a href="http://www.daveallengraphics.com" target="_blank">Dave Allen Graphics</a></span>';
+    echo '<span id="footer-thankyou">Developed by <a href="http://www.designerswebsite.com" target="_blank">Your Name</a></span>';
 }
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+// // Admin footer modification
+
+// function remove_footer_admin ()
+// {
+//     echo '<span id="footer-thankyou">Developed by <a href="http://www.daveallengraphics.com" target="_blank">Dave Allen Graphics</a></span>';
+// }
+// add_filter('admin_footer_text', 'remove_footer_admin');
 	/* ========================================================================================================================
 
 	Custom Post Types - include custom post types and taxonimies here e.g.
