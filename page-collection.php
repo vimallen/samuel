@@ -1,5 +1,5 @@
 <?php
-/**
+
  /**
  * Template Name: Page-collection
  *
@@ -26,7 +26,7 @@
           $screenshot_url = $custom["screenshot_url"][0];
           $website_url = $custom["website_url"][0];
      ?>
-     <div class="module g one-quarter lap-one-half palm-one-whole">
+     <div class="module g one-third lap-one-half palm-one-whole">
           <h3 class="underline-dashed"><?php the_title(); ?></h3>
           <?php the_post_thumbnail(); ?> </a>
   <?php the_content(); ?>
