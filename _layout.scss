@@ -25,7 +25,7 @@ body 	{
 }
 
 .module    {
-                padding-top: 2em;
+                padding-top: 1em;
 
 }
 
@@ -92,7 +92,7 @@ time p    {
 #menu-nav-main-1{
     list-style:none;
     font-weight:normal;
-    margin-bottom:10px;
+    margin-top:50px;
     float:right;
     width:100%;
     position:relative;
@@ -172,7 +172,7 @@ time p    {
 
 
 
-.main.intro h2 {clear: both;} /* Keeps the title left at tablet sizes */
+.main.intro h1 {clear: both;} /* Keeps the title left at tablet sizes */
 
 }
 
@@ -184,22 +184,30 @@ time p    {
             padding-left: 1.375em;
 }
 
+.searchform     {
+                float: right;
 }
 
+}
 
 
 @media only screen and (min-width: 768px) /* 48em */{
 
 #menu-nav-main-1    {
                     position: absolute;
-                    top: 5em;
+                    top: 3em;
                     left: 40%;
 }
+
 
 
 #menu-nav-main-1 ul        {
                     margin-left: 0;
 
+}
+
+.intro-home p   {
+                padding-right: 16em;
 }
 
 /* #menu-nav-main-1  {
@@ -226,11 +234,7 @@ time p    {
     }
 } */
 
-#searchform     {
-                text-align: centre;
-                font-size: 0.75em;
-                padding-bottom: 2em;
-}
+
 
 
 .screen-reader-text {
@@ -239,19 +243,16 @@ time p    {
 
 
 
-#searchform     {
-                text-align: centre;
-                font-size: 0.75em;
-}
+
 
 
 .screen-reader-text {
                     margin-right: 12em;
 }
 
-.intro-home p {
+/*.intro-home p {
             padding-right: 20em;
-}
+}*/
 .intro-page-base    {
                     padding-right: 270px;
 }

@@ -27,7 +27,7 @@ h5,
 h6 					{
 	font-family:  "Times New Roman", Times, serif;
 	font-style: italic;
-	color: lighten($accentcolor, 25%);
+	color: $accentcolor;
 	font-weight: normal;
 }
 
@@ -87,18 +87,24 @@ a	{text-decoration:none;}
 
 /* 	The big message on the home page (when in use)*/
 
-h2.message  {	/* 	The big message on the home page*/
+.intro-home h1  {	/* 	The big message on the home page*/
 			font-family: "Times", Times New Roman, Georgia, serif;
 			font-style: italic;
-			font-size: 1.75em;
+			font-size: 2em;
 			color: $accentcolor;
-			margin: 0 0 2em 0;
-			padding: 1em 0 0 0;
+			margin: 0 0 0.25em 0;
+			padding: 0.5em 0 0 0;
 			border-bottom: 1px dashed #fff;
 			font-weight: normal;
 			clear: both;
 }
 
+@media only screen and (min-width: 768px) /* 48em */{
+
+.intro-home h1 	{ /*     The big message on the home page*/
+				font-size: 4.25em;
+}
+}
 .underline-dashed	{
 					border-bottom: 1px dashed #fff;
 					padding-bottom: 0.23em;
@@ -111,7 +117,9 @@ time  	{
 		display: inline-block;
 }
 
-
+.screen-reader-text {
+					font-size: 16px;
+}
 
 
 
@@ -120,6 +128,8 @@ footer p 	{
 			margin-bottom: 0;
 }
 
-
+.module a::after {
+  content: " >>";
+}
 
 

@@ -10,7 +10,7 @@
 
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
- <?php /*if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); }*/ ?>
+ <?php /* if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } */ ?>
 <div class="main">
   <div class="intro-home">
   <?php the_content(); ?>

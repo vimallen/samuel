@@ -81,7 +81,7 @@ Tags: 			dark, simple
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-/**
+/*!*
  * 
  * inuitcss.com -- @inuitcss -- @csswizardry
  * 
@@ -308,7 +308,7 @@ Tags: 			dark, simple
  * 
  * We work out your end points for you:
  */
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -3590,7 +3590,7 @@ body {
   padding-top: 2em; }
 
 .module {
-  padding-top: 2em; }
+  padding-top: 1em; }
 
 .ngg-galleryoverview {
   padding-bottom: 3em; }
@@ -3637,7 +3637,7 @@ time p {
   #menu-nav-main-1 {
     list-style: none;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-top: 50px;
     float: right;
     width: 100%;
     position: relative;
@@ -3717,21 +3717,27 @@ time p {
   #menu-nav-main-1 li:hover ul li a:hover {
     background: #333; }
 
-  .main.intro h2 {
+  .main.intro h1 {
     clear: both; }
 
   /* Keeps the title left at tablet sizes */ }
 @media only screen and (min-width: 600px) {
   .module {
-    padding-left: 1.375em; } }
+    padding-left: 1.375em; }
+
+  .searchform {
+    float: right; } }
 @media only screen and (min-width: 768px) {
   #menu-nav-main-1 {
     position: absolute;
-    top: 5em;
+    top: 3em;
     left: 40%; }
 
   #menu-nav-main-1 ul {
     margin-left: 0; }
+
+  .intro-home p {
+    padding-right: 16em; }
 
   /* #menu-nav-main-1  {
                   float: left;
@@ -3756,24 +3762,15 @@ time p {
           }
       }
   } */
-  #searchform {
-    text-align: centre;
-    font-size: 0.75em;
-    padding-bottom: 2em; }
+  .screen-reader-text {
+    margin-right: 12em; }
 
   .screen-reader-text {
     margin-right: 12em; }
 
-  #searchform {
-    text-align: centre;
-    font-size: 0.75em; }
-
-  .screen-reader-text {
-    margin-right: 12em; }
-
-  .intro-home p {
-    padding-right: 20em; }
-
+  /*.intro-home p {
+              padding-right: 20em;
+  }*/
   .intro-page-base {
     padding-right: 270px; } }
 /* WIDESCREEN */
@@ -3809,7 +3806,7 @@ h5,
 h6 {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
-  color: #fcd9b7;
+  color: #f8993c;
   font-weight: normal; }
 
 /*	Hot pink lives! */
@@ -3848,18 +3845,22 @@ a {
   content: " »"; }
 
 /* 	The big message on the home page (when in use)*/
-h2.message {
+.intro-home h1 {
   /* 	The big message on the home page*/
   font-family: "Times", Times New Roman, Georgia, serif;
   font-style: italic;
-  font-size: 1.75em;
+  font-size: 2em;
   color: #f8993c;
-  margin: 0 0 2em 0;
-  padding: 1em 0 0 0;
+  margin: 0 0 0.25em 0;
+  padding: 0.5em 0 0 0;
   border-bottom: 1px dashed #fff;
   font-weight: normal;
   clear: both; }
 
+@media only screen and (min-width: 768px) {
+  .intro-home h1 {
+    /*     The big message on the home page*/
+    font-size: 4.25em; } }
 .underline-dashed {
   border-bottom: 1px dashed #fff;
   padding-bottom: 0.23em;
@@ -3870,9 +3871,15 @@ time {
   padding-bottom: 10px;
   display: inline-block; }
 
+.screen-reader-text {
+  font-size: 16px; }
+
 footer p {
   font-size: 0.75em;
   margin-bottom: 0; }
+
+.module a::after {
+  content: " >>"; }
 
 /*
 CSS Name: Default Styles
