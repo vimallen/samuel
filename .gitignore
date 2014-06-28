@@ -28,7 +28,7 @@
 
 # OS generated files #
 ######################
-*.DS_Store
+.DS_Store
 ._*
 .Spotlight-V100
 .Trashes
@@ -39,12 +39,22 @@ Thumbs.db
 # Vim #
 #####
 *.swp
+*.scss.swp
 
 # CodeKit #
 ###########
 codekit-config.json
+config.codekit
 
 # InDesign #
 ############
 
 *.idlk
+*.lst
+
+# Sass #
+########
+
+*.sass-cache
+*.scsccc
+

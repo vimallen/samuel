@@ -4,7 +4,7 @@ Theme Name: 	Samuel Tweed Theme
 Theme URI: 		http://www.daveallengraphics.com
 Description: 	Theme for Samuel Tweed Fabrics Ltd
 Version: 		1.0
-Author: 		Dave Allen	
+Author: 		Dave Allen
 Author URI: 	http://www.daveallengraphics.com
 Tags: 			dark, simple
 */
@@ -12,9 +12,9 @@ Tags: 			dark, simple
     STYLE.CSS
 \*------------------------------------*/
 /**
- * 
+ *
  * sass --watch style.scss:style.min.css --style compressed
- * 
+ *
  * Here we pull in some variables, include the inuit.css framework, then add our
  * project-specific components afterwards.
  */
@@ -81,7 +81,7 @@ Tags: 			dark, simple
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-/**
+/*!*
  * 
  * inuitcss.com -- @inuitcss -- @csswizardry
  * 
@@ -308,7 +308,7 @@ Tags: 			dark, simple
  * 
  * We work out your end points for you:
  */
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -501,7 +501,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -568,6 +568,8 @@ input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -1300,7 +1302,7 @@ td {
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   /* Override this color in your theme stylesheet */ }
   .table--bordered th:empty,
   .table--bordered td:empty {
@@ -1795,7 +1797,7 @@ html.flexbox {
  * 
  */
 .options > li > a {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Extend in your theme stylesheet */
   border-width: 1px;
   border-left-width: 0; }
@@ -2043,7 +2045,7 @@ html.flexbox {
  */
 .block-list,
 .block-list > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */ }
 
 .block-list {
@@ -2080,7 +2082,7 @@ html.flexbox {
  */
 .matrix,
 .matrix > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */ }
 
 .matrix {
@@ -2607,11 +2609,15 @@ html.flexbox {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: -moz-flex;
+  display: -webkit-box;
+  display: -moz-box;
   display: flex;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   -o-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column; }
 
 .stat__title {
@@ -2619,6 +2625,8 @@ html.flexbox {
   -moz-order: 2;
   -ms-order: 2;
   -o-order: 2;
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
   order: 2;
   -ms-flex-order: 2; }
 
@@ -2628,6 +2636,8 @@ html.flexbox {
   -moz-order: 1;
   -ms-order: 1;
   -o-order: 1;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
   order: 1;
   -ms-flex-order: 1; }
 
@@ -3572,19 +3582,13 @@ html.flexbox {
 body {
   background-color: #1C1C1C;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 1em; }
 
-#menu-nav-main-1 {
-  list-style-type: none;
-  margin-left: 2em; }
-
-#menu-nav-main li {
-  list-style-type: none;
-  padding-bottom: 1.5em; }
-
-.responsiveSelectFullMenu li {
-  padding-bottom: 0.5em; }
+.responsiveSelectContainer select.responsiveMenuSelect, select.responsiveMenuSelect {
+  background-color: silver;
+  border-style: none;
+  margin-bottom: 2em; }
 
 .contact-single {
   min-height: 22em;
@@ -3595,19 +3599,31 @@ body {
 .main-home {
   padding-top: 2em; }
 
-.module-home {
-  padding-top: 2em; }
+.module {
+  padding-top: 1em; }
 
+.ngg-galleryoverview {
+  padding-bottom: 3em; }
+
+/* Hover to greyscale not working in ffx */
+/* .ngg-gallery-thumbnail img:hover{ */
+/* filter: grayscale(100%); */
+/* -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); */
+/* -ms-filter: grayscale(100%); -o-filter: grayscale(100%); */
+/* filter: url(desaturate.svg#greyscale); */
+/* filter: gray; */
+/* -webkit-filter: grayscale(1); */
+/* } */
 /* =Images
 ---------- */
 img {
-  border: 1px solid darkgrey; }
+  border: 1px solid darkgray; }
 
 header img {
   border: none; }
 
 footer {
-  border-top: 1px dashed white;
+  border-top: 1px dashed #fff;
   padding-top: 1em;
   clear: both; }
 
@@ -3615,77 +3631,162 @@ time p {
   padding-bottom: 1em; }
 
 #meteor-slideshow {
-  border: 3px solid #333333; }
+  border: 3px solid #333; }
 
 /*  =Media queries
 ----------------------------------------- */
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 480px) {
   header {
     margin-bottom: 2em; }
 
-  #menu-nav-main-1 {
-    list-style-type: none;
-    margin-left: 0em; }
-
-  .main.intro h2 {
-    clear: both; }
-
-  /* Keeps the title left at tablet sizes */ }
-@media only screen and (min-width: 48em) {
-  #menu-nav-main-1 {
-    float: left;
-    padding-top: 6em; }
+  .module {
+    padding-left: 1.375em; }
 
   #menu-nav-main-1 {
     list-style: none;
-    margin-left: 0;
-    margin-top: -6em; }
-    #menu-nav-main-1 > li,
-    #menu-nav-main-1 > li > a {
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      padding-right: 0.3em; }
+    font-weight: normal;
+    margin-top: 50px;
+    float: right;
+    /* width:100% */
+    position: relative;
+    z-index: 5; }
 
-  #searchform {
-    text-align: centre;
-    font-size: 0.75em; }
+  #menu-nav-main-1 li {
+    float: left;
+    margin-right: 10px;
+    position: relative; }
+
+  #menu-nav-main-1 a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #981405; }
+
+  #menu-nav-main-1 a:hover {
+    color: #fff;
+    background: #981405;
+    text-decoration: underline; }
+
+  /*--- DROPDOWN ---*/
+  #menu-nav-main-1 ul {
+    background: #fff;
+    /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background: rgba(255, 255, 255, 0);
+    /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style: none;
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+    /* Hide off-screen when not needed (this is more accessible than display:none;) */ }
+
+  #menu-nav-main-1 ul li {
+    padding-top: 1px;
+    /* Introducing a padding between the li and the a give the illusion spaced items */
+    float: none; }
+
+  #menu-nav-main-1 ul {
+    white-space: nowrap;
+    /* Stop text wrapping and creating multi-line dropdown items */ }
+
+  #menu-nav-main-1 li:hover ul {
+    left: 0;
+    /* Bring back on-screen when needed */ }
+
+  #menu-nav-main-1 li:hover a {
+    /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background: #981405;
+    text-decoration: underline;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+
+  #menu-nav-main-1 li:hover ul a {
+    text-decoration: none; }
+
+  #menu-nav-main-1 li:hover ul li a:hover {
+    background: #333; }
+
+  #menu-nav-main-1 ul li {
+    padding-top: 1px;
+    float: none; }
+
+  #menu-nav-main-1 ul a {
+    white-space: nowrap; }
+
+  #menu-nav-main-1 li:hover ul {
+    left: 0; }
+
+  #menu-nav-main-1 li:hover a {
+    background: #981405;
+    text-decoration: underline; }
+
+  #menu-nav-main-1 li:hover ul li a:hover {
+    background: #333; }
+
+  .main.intro h1 {
+    clear: both; }
+
+  /* Keeps the title left at tablet sizes */ }
+@media only screen and (min-width: 600px) {
+  .module {
+    padding-left: 1.375em; }
+
+  .searchform {
+    float: right; } }
+@media only screen and (min-width: 768px) {
+  #menu-nav-main-1 {
+    position: absolute;
+    top: 3em;
+    left: 40%; }
+
+  #menu-nav-main-1 ul {
+    margin-left: 0; }
+
+  .intro-home p {
+    padding-right: 16em; }
+
+  /* #menu-nav-main-1  {
+                  float: left;
+                  padding-top: 6em;
+  }
+  
+  
+  #menu-nav-main-1  {
+      list-style:none;
+      margin-left:0;
+      @extend .cf;
+      margin-top: -6em;
+  
+      > li{
+  
+          &,
+          > a{
+              display:inline-block;
+             *display:inline;
+              zoom:1;
+              padding-right: 0.3em;
+          }
+      }
+  } */
+  .screen-reader-text {
+    margin-right: 12em; }
 
   .screen-reader-text {
     margin-right: 12em; }
 
-  .intro p {
-    padding-right: 25%; } }
-@media only screen and (min-width: 64em) {
-  #menu-nav-main-1 {
-    float: right;
-    margin-top: -6em;
-    padding-top: 0; }
-
-  #menu-nav-main-1 {
-    list-style: none;
-    margin-left: 0;
-    margin-top: -6em; }
-    #menu-nav-main-1 > li,
-    #menu-nav-main-1 > li > a {
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      padding-right: 0.3em; }
-
-  #searchform {
-    text-align: centre;
-    font-size: 0.75em; }
-
-  .screen-reader-text {
-    margin-right: 12em; } }
+  /*.intro-home p {
+              padding-right: 20em;
+  }*/
+  .intro-page-base {
+    padding-right: 270px; } }
 /* WIDESCREEN */
 /* Increased body size for legibility */
-@media only screen and (min-width: 87.5em) {
+@media only screen and (min-width: 1400px) {
   body {
-    font-size: 120%; } }
+    font-size: 120%;
+    width: 60%; } }
 body {
-  font-family: "Open Sans", Helvetica, serif;
+  font-family: 'Open Sans', Helvetica, serif;
   color: #BDBDBD;
   border: 0; }
 
@@ -3701,7 +3802,7 @@ body {
 */
 /* =Colours	*/
 /* deep red	*/
-/* electric blue	*/
+/* electric blue */
 /*	orange */
 h1,
 h2,
@@ -3711,32 +3812,22 @@ h5,
 h6 {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
-  color: #fcd9b7;
+  color: #f8993c;
   font-weight: normal; }
 
-/*	=Links-main nav
--------------------	*/
-.menu li {
-  margin: 0 0.25em; }
-
-.menu a {
+/*	Hot pink lives! */
+::-moz-selection {
+  background: #FF5E99;
   color: #fff;
-  text-decoration: none;
-  border-bottom: 2px solid #981405;
-  text-transform: uppercase; }
+  text-shadow: none; }
 
-.menu a:hover {
-  background-color: #981405;
-  color: white;
-  text-decoration: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+::selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none; }
 
+/*	=Links-main nav Moved to layout.scss
+-------------------	*/
 /*	=Links-global
 -----------------	*/
 a, a:active, a:visited {
@@ -3749,30 +3840,35 @@ a:hover {
 a {
   text-decoration: none; }
 
-.main-home h2 {
+.main h2 {
   color: #f8993c;
   padding-top: 1em;
   padding-bottom: 0.25em;
-  border-bottom: dashed 1px white; }
+  border-bottom: dashed 1px white;
+  /*text-align: center;*/ }
 
 .module-home a[href]:after {
   content: " »"; }
 
 /* 	The big message on the home page (when in use)*/
-h2.message {
+.intro-home h1 {
   /* 	The big message on the home page*/
   font-family: "Times", Times New Roman, Georgia, serif;
   font-style: italic;
-  font-size: 1.75em;
+  font-size: 2em;
   color: #f8993c;
-  margin: 0 0 2em 0;
-  padding: 1em 0 0 0;
-  border-bottom: 1px dashed white;
+  margin: 0 0 0.25em 0;
+  padding: 0.5em 0 0 0;
+  border-bottom: 1px dashed #fff;
   font-weight: normal;
   clear: both; }
 
+@media only screen and (min-width: 768px) {
+  .intro-home h1 {
+    /*     The big message on the home page*/
+    font-size: 4.25em; } }
 .underline-dashed {
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dashed #fff;
   padding-bottom: 0.23em;
   margin-right: 2em; }
 
@@ -3781,6 +3877,342 @@ time {
   padding-bottom: 10px;
   display: inline-block; }
 
+.screen-reader-text {
+  font-size: 16px; }
+
 footer p {
   font-size: 0.75em;
   margin-bottom: 0; }
+
+.module a::after {
+  content: " >>"; }
+
+/*
+CSS Name: Default Styles
+Description: NextGEN Default Gallery Stylesheet
+Author: Alex Rabe
+Version: 2.11
+
+This is a template stylesheet that can be used with NextGEN Gallery. I tested the
+styles with a default theme Kubrick. Modify it when your theme struggle with it,
+it's only a template design
+
+*/
+/* ----------- Album Styles Extend -------------*/
+.ngg-albumoverview {
+  margin-top: 10px;
+  width: 100%;
+  clear: both;
+  display: block !important; }
+
+.ngg-album {
+  height: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #fff; }
+
+/* IE6 will ignore this , again I hate IE6 */
+/* See also http://www.sitepoint.com/article/browser-specific-css-hacks */
+html > body .ngg-album {
+  overflow: hidden;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #cccccc; }
+
+.ngg-album {
+  overflow: hidden;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #cccccc; }
+
+.ngg-albumtitle {
+  text-align: left;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.4em;
+  margin-bottom: 10px; }
+
+.ngg-thumbnail {
+  float: left;
+  margin-right: 12px; }
+
+.ngg-thumbnail img {
+  background-color: #FFFFFF;
+  border: 1px solid #A9A9A9;
+  margin: 4px 0px 4px 5px;
+  padding: 4px;
+  position: relative; }
+
+.ngg-thumbnail img:hover {
+  background-color: #A9A9A9; }
+
+.ngg-description {
+  text-align: left; }
+
+/* ----------- Album Styles Compact -------------*/
+.ngg-album-compact {
+  float: left;
+  padding-right: 6px !important;
+  margin: 0px !important;
+  text-align: left;
+  width: 120px; }
+
+.ngg-album-compactbox {
+  background: transparent url(albumset.gif) no-repeat scroll 0%;
+  height: 86px;
+  margin: 0pt 0pt 6px !important;
+  padding: 12px 0pt 0pt 7px !important;
+  width: 120px; }
+
+.ngg-album-compactbox .Thumb {
+  border: 1px solid #000000;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 91px;
+  height: 68px; }
+
+.ngg-album-compact h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 110px; }
+
+.ngg-album-compact p {
+  font-size: 11px;
+  margin-top: 2px; }
+
+/* ----------- Gallery style -------------*/
+.ngg-galleryoverview {
+  overflow: hidden;
+  margin-top: 10px;
+  width: 100%;
+  clear: both;
+  display: block !important; }
+
+.ngg-galleryoverview .desc {
+  /* required for description */
+  margin: 0px 10px 10px 0px;
+  padding: 5px; }
+
+.ngg-gallery-thumbnail-box {
+  float: left; }
+
+.ngg-gallery-thumbnail {
+  float: left;
+  margin-right: 5px;
+  text-align: center; }
+
+.ngg-gallery-thumbnail img {
+  background-color: #FFFFFF;
+  border: 1px solid #A9A9A9;
+  display: block;
+  margin: 4px 0px 4px 5px;
+  padding: 4px;
+  position: relative; }
+
+.ngg-gallery-thumbnail img:hover {
+  background-color: #A9A9A9; }
+
+.ngg-gallery-thumbnail span {
+  /* Images description */
+  font-size: 90%;
+  padding-left: 5px;
+  display: block; }
+
+.ngg-clear {
+  clear: both;
+  float: none; }
+
+/* ----------- Gallery navigation -------------*/
+.ngg-navigation {
+  font-size: 0.9em !important;
+  clear: both !important;
+  display: block !important;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  text-align: center; }
+
+.ngg-navigation span {
+  font-weight: bold;
+  margin: 0pt 6px; }
+
+.ngg-navigation a.page-numbers,
+.ngg-navigation a.next,
+.ngg-navigation a.prev,
+.ngg-navigation span.page-numbers,
+.ngg-navigation span.next,
+.ngg-navigation span.prev {
+  border: 1px solid #DDDDDD;
+  margin-right: 3px;
+  padding: 3px 8px;
+  text-decoration: none; }
+
+.ngg-navigation a.page-numbers:hover,
+.ngg-navigation a.next:hover,
+.ngg-navigation a.prev:hover,
+.ngg-navigation span.page-numbers:hover,
+.ngg-navigation span.next:hover,
+.ngg-navigation span.prev:hover {
+  background-color: #0066CC;
+  color: #FFFFFF !important;
+  text-decoration: none !important; }
+
+/* ----------- Image browser style -------------*/
+.ngg-imagebrowser h3 {
+  text-align: center; }
+
+.ngg-imagebrowser img {
+  border: 1px solid #A9A9A9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block !important;
+  padding: 5px; }
+
+.ngg-imagebrowser-nav {
+  padding: 5px;
+  margin-left: 10px; }
+
+.ngg-imagebrowser-nav .back {
+  float: left;
+  border: 1px solid #DDDDDD;
+  margin-right: 3px;
+  padding: 3px 7px; }
+
+.ngg-imagebrowser-nav .next {
+  float: right;
+  border: 1px solid #DDDDDD;
+  margin-right: 3px;
+  padding: 3px 7px; }
+
+.ngg-imagebrowser-nav .counter {
+  text-align: center;
+  font-size: 0.9em !important; }
+
+.exif-data {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+/* ----------- Slideshow -------------*/
+.slideshow {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  outline: none; }
+
+/* ----------- JS Slideshow -------------*/
+.ngg-slideshow {
+  overflow: hidden;
+  position: relative; }
+
+.ngg-slideshow * {
+  vertical-align: middle; }
+
+/* See also : http://www.brunildo.org/test/img_center.html */
+.ngg-slideshow-loader {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+.ngg-slideshow-loader img {
+  background: none !important;
+  border: 0 none !important;
+  margin: auto !important; }
+
+/* ----------- Single picture -------------*/
+.ngg-singlepic {
+  background-color: #FFFFFF;
+  display: block;
+  padding: 4px; }
+
+.ngg-left {
+  float: left;
+  margin-right: 10px; }
+
+.ngg-right {
+  float: right;
+  margin-left: 10px; }
+
+.ngg-center {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+/* ----------- Sidebar widget -------------*/
+.ngg-widget,
+.ngg-widget-slideshow {
+  overflow: hidden;
+  margin: 0pt;
+  padding: 5px 0px 0px 0pt;
+  text-align: left; }
+
+.ngg-widget img {
+  border: 2px solid #A9A9A9;
+  margin: 0pt 2px 2px 0px;
+  padding: 1px; }
+
+/* ----------- Related images -------------*/
+.ngg-related-gallery {
+  background: #F9F9F9;
+  border: 1px solid #E0E0E0;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 5px; }
+
+.ngg-related-gallery img {
+  border: 1px solid #DDDDDD;
+  float: left;
+  margin: 0pt 3px;
+  padding: 2px;
+  height: 50px;
+  width: 50px; }
+
+.ngg-related-gallery img:hover {
+  border: 1px solid #000000; }
+
+/* ----------- Gallery list -------------*/
+.ngg-galleryoverview ul li:before {
+  content: '' !important; }
+
+.ngg-gallery-list {
+  list-style-type: none;
+  padding: 0px !important;
+  text-indent: 0px !important; }
+
+.ngg-galleryoverview div.pic img {
+  width: 100%; }
+
+.ngg-gallery-list li {
+  float: left;
+  margin: 0 2px 0px 2px !important;
+  overflow: hidden; }
+
+.ngg-gallery-list li a {
+  border: 1px solid #CCCCCC;
+  display: block;
+  padding: 2px; }
+
+.ngg-gallery-list li.selected a {
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+  background: #000000 none repeat scroll 0 0; }
+
+.ngg-gallery-list li img {
+  height: 40px;
+  width: 40px; }
+
+li.ngg-next, li.ngg-prev {
+  height: 40px;
+  width: 40px;
+  font-size: 3.5em; }
+
+li.ngg-next a, li.ngg-prev a {
+  padding-top: 10px;
+  border: none;
+  text-decoration: none; }
+
+#TB_window {
+  z-index: 9999 !important; }
