@@ -157,7 +157,7 @@
    @import "base/headings";
    @import "base/paragraphs";
    @import "base/smallprint";
-   @import "base/quotes";
+   /* @import "base/quotes";  Now deprecated in Sass*/
    @import "base/code";
    @import "base/links";
    @import "base/images";
