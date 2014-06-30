@@ -888,74 +888,7 @@ hgroup .hN {
   font-size: 0.625rem;
   line-height: 2.4; }
 
-/*------------------------------------*\
-    $QUOTES
-\*------------------------------------*/
-/**
- * If English quotes are set in `_vars.scss`, define them here.
- */
-/**
- * Big up @boblet: html5doctor.com/blockquote-q-cite
- */
-/**
- * Inline quotes.
- */
-q {
-  quotes: "‘" "’" "“" "”"; }
-  q:before {
-    content: "‘";
-    content: open-quote; }
-  q:after {
-    content: "’";
-    content: close-quote; }
-  q q:before {
-    content: "“";
-    content: open-quote; }
-  q q:after {
-    content: "”";
-    content: close-quote; }
-
-blockquote {
-  quotes: "“" "”"; }
-  blockquote p:before {
-    content: "“";
-    content: open-quote; }
-  blockquote p:after {
-    content: "";
-    content: no-close-quote; }
-  blockquote p:last-of-type:after {
-    content: "”";
-    content: close-quote; }
-  blockquote q:before {
-    content: "‘";
-    content: open-quote; }
-  blockquote q:after {
-    content: "’";
-    content: close-quote; }
-
-/**
- * 
-   <blockquote>
-       <p>Insanity: doing the same thing over and over again and expecting
-       different results.</p>
-       <b class=source>Albert Einstein</b>
-   </blockquote>
- * 
- */
-blockquote {
-  /**
-   * .4em is roughly equal to the width of the opening “ that we wish to hang.
-   */
-  text-indent: -0.41em; }
-  blockquote p:last-of-type {
-    margin-bottom: 0; }
-
-.source {
-  display: block;
-  text-indent: 0; }
-  .source:before {
-    content: "—"; }
-
+/* @import "base/quotes";  Now deprecated in Sass*/
 /*------------------------------------*\
     $CODE
 \*------------------------------------*/
@@ -3569,6 +3502,58 @@ html.flexbox {
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+/* =Variables */
+/* =Helper */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, .grid:before,
+.clearfix:after,
+.grid:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after, .grid:after {
+  clear: both; }
+
+.clearfix, .grid {
+  *zoom: 1; }
+
 body {
   background-color: #1C1C1C;
   width: 80%;
@@ -3737,29 +3722,28 @@ time p {
   .intro-home p {
     padding-right: 16em; }
 
-  /* #menu-nav-main-1  {
-                  float: left;
-                  padding-top: 6em;
-  }
-  
-  
-  #menu-nav-main-1  {
-      list-style:none;
-      margin-left:0;
-      @extend .cf;
-      margin-top: -6em;
-  
-      > li{
-  
-          &,
-          > a{
-              display:inline-block;
-             *display:inline;
-              zoom:1;
-              padding-right: 0.3em;
-          }
-      }
-  } */
+  /* Grid for portfolio landing page	*/ }
+@media only screen and (min-width: 768px) and (min-width: 48em) {
+  [class='col-portfolio'] {
+    float: left;
+    width: 33%;
+    padding-right: 2em; }
+    .grid [class='col-portfolio']:last-of-type {
+      padding-right: 2em; }
+
+  [class='col-category'] {
+    float: left;
+    width: 33.33%;
+    padding-right: 2em; }
+    .grid [class='col-category']:last-of-type {
+      padding-right: 2em; }
+
+  /* Opt-in outside padding */
+  .grid-pad {
+    padding: 2em 0 2em 2em; }
+    .grid-pad [class*='col-']:last-of-type {
+      padding-right: 2em; } }
+@media only screen and (min-width: 768px) {
   .screen-reader-text {
     margin-right: 12em; }
 
@@ -4208,3 +4192,12 @@ li.ngg-next a, li.ngg-prev a {
 
 #TB_window {
   z-index: 9999 !important; }
+
+.grid {
+  /* background: gray; */
+  margin: 0 0 2em 0;
+  padding-left: 0; }
+
+/* removes padding left for mobile */
+.grid .grid-pad {
+  padding-left: 0; }

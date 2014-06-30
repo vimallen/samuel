@@ -1,0 +1,14 @@
+.grid {
+		/* background: gray; */
+		margin: 0 0 $pad 0;
+		@extend .clearfix; 
+		padding-left: 0;
+ 
+}
+
+
+/* removes padding left for mobile */
+
+.grid .grid-pad	{
+				padding-left: 0;
+}

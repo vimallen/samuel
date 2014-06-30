@@ -30,8 +30,11 @@ Tags: 			dark, simple
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+@import	"variables";
+@import	"helper";
 @import "layout";
 @import "typography";
 @import "nggallery"; // Hack alert! Need to sort the nextgen css not loading. Not loading on live server.
+@import	"grid";
 
 
