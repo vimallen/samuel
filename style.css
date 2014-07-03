@@ -28,18 +28,18 @@ Tags: 			dark, simple
  */
 /* =Variables */
 /* =Helper */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px; }
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%; }
-
+/* .ir { */
+/*     background-color: transparent; */
+/*     border: 0; */
+/*     overflow: hidden; */
+/*     *text-indent: -9999px; */
+/* } */
+/* .ir:before { */
+/*     content: ""; */
+/*     display: block; */
+/*     width: 0; */
+/*     height: 150%; */
+/* } */
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -75,9 +75,9 @@ Tags: 			dark, simple
 .clearfix:after, .grid:after {
   clear: both; }
 
-.clearfix, .grid {
-  *zoom: 1; }
-
+/* .clearfix { */
+/*     *zoom: 1; */
+/* } */
 body {
   background-color: #1C1C1C;
   width: 80%;
@@ -251,13 +251,13 @@ time p {
   .intro-home p {
     padding-right: 16em; }
 
-  /* Grid for portfolio landing page	*/ }
+  /* Grid for home page	*/ }
 @media only screen and (min-width: 768px) and (min-width: 48em) {
-  [class='col-portfolio'] {
+  [class='col-home'] {
     float: left;
     width: 30%;
     padding-right: 2em; }
-    .grid [class='col-portfolio']:last-of-type {
+    .grid [class='col-home']:last-of-type {
       padding-right: 2em; }
 
   [class='col-category'] {

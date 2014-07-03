@@ -210,11 +210,11 @@ time p    {
                 padding-right: 16em;
 }
 
-/* Grid for portfolio landing page	*/
+/* Grid for home page	*/
 
 @media only screen and (min-width: 48em) /* 768px */ {
 
-[class='col-portfolio'] {
+[class='col-home'] {
 	float: left;
 	width: 30%;
   padding-right: $pad;
