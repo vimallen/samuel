@@ -27,12 +27,14 @@
           $custom = get_post_custom($post->ID);
           $screenshot_url = $custom["screenshot_url"][0];
           $website_url = $custom["website_url"][0];
-     ?>
-     <div class="module g one-third lap-one-half palm-one-whole">
+?>
+	<div class="col-portfolio">
+     <div class="module-portfolio">
           <h3 class="underline-dashed"><?php the_title(); ?></h3>
           <?php the_post_thumbnail(); ?> </a>
   <?php the_content(); ?>
-</div><!-- module -->
+	</div><!-- module -->
+</div><!--col-->
 
 
 
