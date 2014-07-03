@@ -11,8 +11,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
  <?php /* if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } */ ?>
-<div class="main">
-  <div class="intro-home">
+<div class="grid grid-pad main-home" >
   <?php the_content(); ?>
 </div>
 <?php
@@ -39,5 +38,5 @@
 
 
 <?php endwhile; ?>
-</div><!--main-home-->
+</div><!--grid-->
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

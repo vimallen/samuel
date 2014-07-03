@@ -4,7 +4,12 @@ body 	{
 		margin: 0 auto;
         padding-top: 1em;
 }
+/* =Responsive images */
 
+img	{
+	max-width: 100%;
+	height: auto;
+}
 
 .responsiveSelectContainer select.responsiveMenuSelect, select.responsiveMenuSelect {
         background-color: silver;
@@ -24,10 +29,10 @@ body 	{
             padding-top: 2em;
 }
 
-.module    {
-                padding-top: 1em;
+/* .module    { */
+/*                 padding-top: 1em; */
 
-}
+/* } */
 
 .ngg-galleryoverview    {
                         padding-bottom: 3em;
@@ -79,9 +84,9 @@ time p    {
             margin-bottom: 2em;
     }
 
-    .module     {
-            padding-left: 1.375em;
-}
+    /* .module     { */
+    /*         padding-left: 1.375em; */
+/* } */
 
 
 #menu-nav-main-1{
@@ -175,9 +180,9 @@ time p    {
 
 @media only screen and (min-width: 600px) /* 37.5em */ {
 
-.module     {
-            padding-left: 1.375em;
-}
+/* .module     { */
+/*             padding-left: 1.375em; */
+/* } */
 
 .searchform     {
                 float: right;
@@ -211,7 +216,7 @@ time p    {
 
 [class='col-portfolio'] {
 	float: left;
-	width: 33%;
+	width: 30%;
   padding-right: $pad;
   .grid &:last-of-type {
   	padding-right: $pad;
@@ -221,7 +226,7 @@ time p    {
 
 [class='col-category'] {
 	float: left;
-	width: 33.33%;
+	width: 30%;
   padding-right: $pad;
   .grid &:last-of-type {
   	padding-right: $pad;
