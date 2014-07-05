@@ -80,7 +80,7 @@ a	{text-decoration:none;}
 
 }
 
-.module-home  	{
+[class*='module'] 	{
 				a[href]:after {content:" »";
 }
 }
@@ -128,8 +128,6 @@ footer p 	{
 			margin-bottom: 0;
 }
 
-.module a::after {
-  content: " >>";
-}
+
 
 

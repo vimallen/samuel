@@ -100,12 +100,6 @@ img {
   height: auto !important;
   height: 22em; }
 
-.main-home {
-  padding-top: 2em; }
-
-/* .module    { */
-/*                 padding-top: 1em; */
-/* } */
 .ngg-galleryoverview {
   padding-bottom: 3em; }
 
@@ -133,9 +127,6 @@ footer {
 
 time p {
   padding-bottom: 1em; }
-
-#meteor-slideshow {
-  border: 3px solid #333; }
 
 /*  =Media queries
 ----------------------------------------- */
@@ -227,31 +218,21 @@ time p {
     text-decoration: underline; }
 
   #menu-nav-main-1 li:hover ul li a:hover {
-    background: #333; }
-
-  .main.intro h1 {
-    clear: both; }
-
-  /* Keeps the title left at tablet sizes */ }
-@media only screen and (min-width: 600px) {
-  /* .module     { */
-  /*             padding-left: 1.375em; */
-  /* } */
-  .searchform {
-    float: right; } }
+    background: #333; } }
 @media only screen and (min-width: 768px) {
   #menu-nav-main-1 {
     position: absolute;
     top: 3em;
     left: 40%; }
 
-  #menu-nav-main-1 ul {
-    margin-left: 0; }
+  ul.sub-menu {
+    margin-left: -2em;
+    /* Drop down elements, aligning to top level	*/ }
 
   .intro-home p {
     padding-right: 16em; }
 
-  /* Grid for home page	*/ }
+  /* Grids	*/ }
 @media only screen and (min-width: 768px) and (min-width: 48em) {
   [class='col-home'] {
     float: left;
@@ -260,12 +241,12 @@ time p {
     .grid [class='col-home']:last-of-type {
       padding-right: 2em; }
 
-  [class='col-category'] {
+  [class='col-collection'] {
     float: left;
     width: 30%;
     padding-right: 2em; }
-    .grid [class='col-category']:last-of-type {
-      padding-right: 2em; }
+    .grid [class='col-collection']:last-of-type {
+      padding-right: 0; }
 
   /* Opt-in outside padding */
   .grid-pad {
@@ -273,15 +254,6 @@ time p {
     .grid-pad [class*='col-']:last-of-type {
       padding-right: 2em; } }
 @media only screen and (min-width: 768px) {
-  .screen-reader-text {
-    margin-right: 12em; }
-
-  .screen-reader-text {
-    margin-right: 12em; }
-
-  /*.intro-home p {
-              padding-right: 20em;
-  }*/
   .intro-page-base {
     padding-right: 270px; } }
 /* WIDESCREEN */
@@ -352,7 +324,7 @@ a {
   border-bottom: dashed 1px white;
   /*text-align: center;*/ }
 
-.module-home a[href]:after {
+[class*='module'] a[href]:after {
   content: " »"; }
 
 /* 	The big message on the home page (when in use)*/
@@ -388,9 +360,6 @@ time {
 footer p {
   font-size: 0.75em;
   margin-bottom: 0; }
-
-.module a::after {
-  content: " >>"; }
 
 /*
 CSS Name: Default Styles
@@ -725,8 +694,4 @@ li.ngg-next a, li.ngg-prev a {
 .grid {
   /* background: gray; */
   margin: 0 0 2em 0;
-  padding-left: 0; }
-
-/* removes padding left for mobile */
-.grid .grid-pad {
   padding-left: 0; }
