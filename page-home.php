@@ -27,7 +27,7 @@
           $screenshot_url = $custom["screenshot_url"][0];
           $website_url = $custom["website_url"][0];
 ?>
-	<div class="col-home">
+	<div class="col-1-3">
      <div class="module-home">
           <h3 class="underline-dashed"><?php the_title(); ?></h3>
           <?php the_post_thumbnail(); ?> </a>

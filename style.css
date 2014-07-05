@@ -229,33 +229,20 @@ time p {
     margin-left: -2em;
     /* Drop down elements, aligning to top level	*/ }
 
-  .intro-home p {
-    padding-right: 16em; }
-
   /* Grids	*/ }
 @media only screen and (min-width: 768px) and (min-width: 48em) {
-  [class='col-home'] {
+  [class='col-1-3'] {
     float: left;
     width: 30%;
     padding-right: 2em; }
-    .grid [class='col-home']:last-of-type {
+    .grid [class='col-1-3']:last-of-type {
       padding-right: 2em; }
-
-  [class='col-collection'] {
-    float: left;
-    width: 30%;
-    padding-right: 2em; }
-    .grid [class='col-collection']:last-of-type {
-      padding-right: 0; }
 
   /* Opt-in outside padding */
   .grid-pad {
     padding: 2em 0 2em 2em; }
     .grid-pad [class*='col-']:last-of-type {
       padding-right: 2em; } }
-@media only screen and (min-width: 768px) {
-  .intro-page-base {
-    padding-right: 270px; } }
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 1400px) {
