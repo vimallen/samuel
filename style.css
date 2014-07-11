@@ -94,11 +94,11 @@ img {
   border-style: none;
   margin-bottom: 2em; }
 
-.contact-single {
-  min-height: 22em;
+.module-contact {
+  min-height: 20em;
   /* Cross broswr compatible. Via ccs-tricks */
   height: auto !important;
-  height: 22em; }
+  height: 20em; }
 
 .ngg-galleryoverview {
   padding-bottom: 3em; }
@@ -334,7 +334,7 @@ a {
 .underline-dashed {
   border-bottom: 1px dashed #fff;
   padding-bottom: 0.23em;
-  margin-right: 2em; }
+  /* margin-right: 2em; */ }
 
 time {
   color: #829256;

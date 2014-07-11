@@ -16,7 +16,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="main">
+<div class="grid grid-pad" >
 <h2><?php the_title(); ?></h2>
 <?php
           $loop = new WP_Query(array('post_type' => 'contacts',
@@ -32,13 +32,15 @@
           $website_url = $custom["website_url"][0];
      ?>
              
-          <div class="contact-single g one-third lap-one-half palm-one-whole">
-          <h4 class="underline-dashed"><?php the_title(); ?></h4>
-          <a href="<?=$website_url?>"><?php the_post_thumbnail(); ?> </a>
-          <?php the_content(); ?>
-          </div><!--contact-->
+<div class="col-1-3">
+	<div class="module-contact">
+		<h4 class="underline-dashed"><?php the_title(); ?></h4>
+	<?php the_post_thumbnail(); ?> </a>
+<?php the_content(); ?>
+</div><!-- module -->
+</div><!--col-->
           
 
 <?php endwhile; ?>
-</div><!--main-->
+</div><!--grid-->
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

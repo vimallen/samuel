@@ -11,7 +11,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="grid grid-pad intro-collection" >
+<div class="grid grid-pad intro" >
   <?php the_content(); ?>
 <?php
           $loop = new WP_Query(array('post_type' => 'module-collection',
