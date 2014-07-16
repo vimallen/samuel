@@ -5,6 +5,13 @@ body 	{
         padding-top: 1em;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* =Responsive images */
 
 img	{
