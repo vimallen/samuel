@@ -84,6 +84,12 @@ body {
   margin: 0 auto;
   padding-top: 1em; }
 
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 /* =Responsive images */
 img {
   max-width: 100%;
@@ -290,7 +296,7 @@ h6 {
   color: #fff;
   text-shadow: none; }
 
-/*	=Links-main nav Moved to layout.scss
+/*	=Links-main nav Moved to _layout.scss
 -------------------	*/
 /*	=Links-global
 -----------------	*/
@@ -343,6 +349,9 @@ time {
 
 .screen-reader-text {
   font-size: 16px; }
+
+.main p {
+  max-width: 38em; }
 
 footer p {
   font-size: 0.75em;

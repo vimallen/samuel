@@ -11,7 +11,7 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="grid grid-pad intro-home" >
+<div class="grid grid-pad intro-home main" >
   <?php the_content(); ?>
 </div>
 <?php
