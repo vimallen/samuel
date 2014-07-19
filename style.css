@@ -60,6 +60,25 @@ Tags: 			dark, simple
 /* .clearfix { */
 /*     *zoom: 1; */
 /* } */
+/**
+ * Image placement variations.
+ */
+.img--right {
+  float: right;
+  margin-bottom: 1em;
+  margin-left: 1em; }
+
+.img--left {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em; }
+
+.img--center {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto; }
+
 body {
   background-color: #1C1C1C;
   width: 80%;

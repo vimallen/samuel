@@ -13,6 +13,7 @@ Tags: 			dark, simple
 
 @import	"sass/helpers/variables";
 @import	"sass/helpers/helper";
+@import	"sass/helpers/images";
 @import "sass/layout/layout";
 @import "sass/base/typography";
 @import "sass/vendors/nggallery"; // Hack alert! Need to sort the nextgen css not loading. Not loading on live server.
