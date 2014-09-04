@@ -1,6 +1,6 @@
 body 	{
 		font-family: Georgia, Times, "Times New Roman", serif;
-		color: #BDBDBD;
+		color: #444444;
 		border: 0;
 		line-height: 1.5;
 }
@@ -18,7 +18,7 @@ body 	{
 
 $hovercolor: #981405; /* deep red	*/
 $linkcolor:	#66CCCC;	/* electric blue */
-$accentcolor: #F8993C;	/*	orange */
+$accentcolor: #981405;	/*	deep red */
 
 h1,
 h2,
@@ -44,7 +44,7 @@ h6 					{
 // }
 
 // .menu a	{
-// 					color: #fff;
+// 					color: #409BBE;
 // 					text-decoration: none;
 // 					border-bottom: 2px solid $hovercolor;
 // 					text-transform: uppercase;
@@ -67,7 +67,7 @@ h6 					{
 /*	=Links-global
 -----------------	*/
 
-a, a:active, a:visited { color: #66cccc; }
+a, a:active, a:visited { color: #409BBE; }
 a:hover { color: #981405; text-decoration: underline; }
 
 a	{text-decoration:none;}

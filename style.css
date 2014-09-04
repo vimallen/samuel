@@ -80,7 +80,7 @@ Tags: 			dark, simple
   margin-left: auto; }
 
 body {
-  background-color: #1C1C1C;
+  background-color: #F3EFE2;
   width: 80%;
   margin: 0 auto;
   padding-top: 1em; }
@@ -161,18 +161,18 @@ time p {
   #menu-nav-main-1 a {
     display: block;
     padding: 5px;
-    color: #fff;
+    color: #444;
     text-decoration: none;
     border-bottom: 2px solid #981405; }
 
   #menu-nav-main-1 a:hover {
-    color: #fff;
-    background: #981405;
+    color: #444;
+    background: #ccc;
     text-decoration: underline; }
 
   /*--- DROPDOWN ---*/
   #menu-nav-main-1 ul {
-    background: #fff;
+    background: #F3EFE2;
     /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
     background: rgba(255, 255, 255, 0);
     /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
@@ -197,7 +197,7 @@ time p {
 
   #menu-nav-main-1 li:hover a {
     /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-    background: #981405;
+    background: #ccc;
     text-decoration: underline;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -221,7 +221,7 @@ time p {
     left: 0; }
 
   #menu-nav-main-1 li:hover a {
-    background: #981405;
+    background: #ccc;
     text-decoration: underline; }
 
   #menu-nav-main-1 li:hover ul li a:hover {
@@ -258,7 +258,7 @@ time p {
     width: 60%; } }
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
-  color: #BDBDBD;
+  color: #444444;
   border: 0;
   line-height: 1.5; }
 
@@ -275,7 +275,7 @@ body {
 /* =Colours	*/
 /* deep red	*/
 /* electric blue */
-/*	orange */
+/*	deep red */
 h1,
 h2,
 h3,
@@ -284,7 +284,7 @@ h5,
 h6 {
   font-family: Georgia, Times, "Times New Roman", serif;
   /* font-style: italic; */
-  color: #f8993c;
+  color: #981405;
   font-weight: normal; }
 
 /*	Hot pink lives! */
@@ -303,7 +303,7 @@ h6 {
 /*	=Links-global
 -----------------	*/
 a, a:active, a:visited {
-  color: #66cccc; }
+  color: #409BBE; }
 
 a:hover {
   color: #981405;
@@ -313,7 +313,7 @@ a {
   text-decoration: none; }
 
 .main h2 {
-  color: #f8993c;
+  color: #981405;
   padding-top: 1em;
   padding-bottom: 0.25em;
   border-bottom: dashed 1px white;
@@ -328,7 +328,7 @@ a {
   font-family: Georgia, Times, "Times New Roman", serif;
   /* font-style: italic; */
   font-size: 2em;
-  color: #f8993c;
+  color: #981405;
   margin: 0 0 0.25em 0;
   padding: 0.5em 0 0 0;
   border-bottom: 1px dashed #fff;
