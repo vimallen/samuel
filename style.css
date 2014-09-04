@@ -325,8 +325,8 @@ a {
 /* 	The big message on the home page (when in use)*/
 .intro-home h1 {
   /* 	The big message on the home page*/
-  font-family: "Times", Times New Roman, Georgia, serif;
-  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  /* font-style: italic; */
   font-size: 2em;
   color: #f8993c;
   margin: 0 0 0.25em 0;
