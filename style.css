@@ -128,7 +128,7 @@ header img {
   border: none; }
 
 footer {
-  border-top: 1px dashed #fff;
+  border-top: 1px dashed #444;
   padding-top: 1em;
   clear: both; }
 
@@ -229,7 +229,7 @@ time p {
 @media only screen and (min-width: 768px) {
   #menu-nav-main-1 {
     position: absolute;
-    top: 3em;
+    top: 2em;
     left: 40%; }
 
   ul.sub-menu {
@@ -316,7 +316,7 @@ a {
   color: #981405;
   padding-top: 1em;
   padding-bottom: 0.25em;
-  border-bottom: dashed 1px white;
+  border-bottom: dashed 1px #444;
   /*text-align: center;*/ }
 
 [class*='module'] a[href]:after {
@@ -331,7 +331,7 @@ a {
   color: #981405;
   margin: 0 0 0.25em 0;
   padding: 0.5em 0 0 0;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 2px dashed #444;
   font-weight: normal;
   clear: both; }
 
@@ -340,7 +340,7 @@ a {
     /*     The big message on the home page*/
     font-size: 4.25em; } }
 .underline-dashed {
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #444;
   padding-bottom: 0.23em;
   /* margin-right: 2em; */ }
 
