@@ -205,10 +205,10 @@ time p {
     transition: all 0.4s ease-in-out; }
 
   #menu-nav-main-1 li:hover ul a {
-    text-decoration: none; }
+    text-decoration: underline; }
 
   #menu-nav-main-1 li:hover ul li a:hover {
-    background: #333; }
+    background: #ccc; }
 
   #menu-nav-main-1 ul li {
     padding-top: 1px;
@@ -225,11 +225,11 @@ time p {
     text-decoration: underline; }
 
   #menu-nav-main-1 li:hover ul li a:hover {
-    background: #333; } }
+    background: #F3EFE2; } }
 @media only screen and (min-width: 768px) {
   #menu-nav-main-1 {
     position: absolute;
-    top: 2em;
+    top: 1em;
     left: 40%; }
 
   ul.sub-menu {
@@ -238,11 +238,11 @@ time p {
 
   /* Grids	*/ }
 @media only screen and (min-width: 768px) and (min-width: 48em) {
-  [class='col-1-3'] {
+  [class='col-1-2'] {
     float: left;
-    width: 30%;
+    width: 50%;
     padding-right: 2em; }
-    .grid [class='col-1-3']:last-of-type {
+    .grid [class='col-1-2']:last-of-type {
       padding-right: 2em; }
 
   /* Opt-in outside padding */
@@ -333,6 +333,7 @@ a {
   padding: 0.5em 0 0 0;
   border-bottom: 2px dashed #444;
   font-weight: normal;
+  text-transform: uppercase;
   clear: both; }
 
 @media only screen and (min-width: 768px) {
@@ -353,7 +354,7 @@ time {
   font-size: 16px; }
 
 .main p {
-  max-width: 38em; }
+  max-width: 45em; }
 
 footer p {
   font-size: 0.75em;
@@ -691,7 +692,7 @@ li.ngg-next a, li.ngg-prev a {
 
 .grid {
   /* background: gray; */
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
   padding-left: 0; }
 
 /* Menu CSS */

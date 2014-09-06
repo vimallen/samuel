@@ -73,7 +73,7 @@ function remove_footer_admin ()
 		'show_ui' => true,
 		'capability_type' => 'post',
 		'hierarchical' => false,
-		'rewrite' => array('slug' => 'recipes'),
+		'rewrite' => array('slug' => 'contacts'),
 		'query_var' => true,
 		'supports' => array(
 		'title',
@@ -118,7 +118,7 @@ function remove_footer_admin ()
 		'show_ui' => true,
 		'capability_type' => 'post',
 		'hierarchical' => false,
-		'rewrite' => array('slug' => 'recipes'),
+		'rewrite' => array('slug' => 'collections'),
 		'query_var' => true,
 		'supports' => array(
 		'title',
