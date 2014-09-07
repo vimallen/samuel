@@ -138,9 +138,9 @@ time p {
 /*  =Media queries
 ----------------------------------------- */
 @media only screen and (min-width: 480px) {
-  header {
-    margin-bottom: 2em; }
-
+  /* header { */
+  /*         margin-bottom: 2em; */
+  /* } */
   /* .module     { */
   /*         padding-left: 1.375em; */
   /* } */
@@ -241,15 +241,15 @@ time p {
   [class='col-1-2'] {
     float: left;
     width: 50%;
-    padding-right: 2em; }
+    padding-right: 1em; }
     .grid [class='col-1-2']:last-of-type {
-      padding-right: 2em; }
+      padding-right: 1em; }
 
   /* Opt-in outside padding */
   .grid-pad {
-    padding: 2em 0 2em 2em; }
+    padding: 1em 0 1em 1em; }
     .grid-pad [class*='col-']:last-of-type {
-      padding-right: 2em; } }
+      padding-right: 1em; } }
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 1400px) {
