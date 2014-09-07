@@ -17,7 +17,8 @@
 <?php
           $loop = new WP_Query(array('post_type' => 'module-home',
           'posts_per_page' => 10,
-          'orderby'=>'title',
+          'meta_key'		=> 'sequence',
+		  'orderby'		=> 'meta_value_num',
            'order'=>'ASC',
           ));
      ?>
