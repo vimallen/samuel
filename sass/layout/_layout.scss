@@ -1,8 +1,13 @@
 body 	{
-        background-color: #F3EFE2;
 		width: 80%;
 		margin: 0 auto;
         padding-top: 1em;
+	  /* background: url(images/UnionFlag-dev.png) top no-repeat; */ 
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
+  /* background-size: cover; */
+  background-color: #F3EFE2;
 }
 
 html {
@@ -23,6 +28,7 @@ img	{
         background-color: silver;
         border-style: none;
         margin-bottom: 2em;
+		font-size: 0.75em;
 
 }
 
