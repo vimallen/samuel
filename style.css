@@ -248,7 +248,7 @@ time p {
     display: block;
     border: none;
     position: absolute;
-    right: -2px;
+    right: 0;
     top: 100px; }
 
   ul.sub-menu {
