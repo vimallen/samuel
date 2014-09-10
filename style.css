@@ -96,6 +96,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.woven {
+  display: none; }
+
+.woven img {
+  border: 0; }
+
 /* =Responsive images */
 img {
   max-width: 100%;
@@ -237,6 +243,13 @@ time p {
     position: absolute;
     top: 1em;
     left: 40%; }
+
+  .woven {
+    display: block;
+    border: none;
+    position: absolute;
+    right: -2px;
+    top: 100px; }
 
   ul.sub-menu {
     margin-left: -2em;

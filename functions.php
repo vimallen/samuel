@@ -229,6 +229,9 @@ function remove_wp_logo() {
 }
 add_action( 'wp_before_admin_bar_render', 'remove_wp_logo' );
 
+
+//	Remove p tags from images
+
 function filter_ptags_on_images($content)
 {
     // do a regular expression replace...

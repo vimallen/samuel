@@ -17,6 +17,13 @@ html {
   box-sizing: inherit;
 }
 
+.woven	{
+		display: none;
+}
+.woven	img	{
+			border: 0;
+}
+
 /* =Responsive images */
 
 img	{
@@ -189,7 +196,13 @@ time p    {
                     left: 40%;
 }
 
-
+.woven	{
+			display: block;
+		border: none;
+		position: absolute;
+		right:-2px;
+		top:100px;
+}
 
 ul.sub-menu	{                   
 			margin-left: -2em; /* Drop down elements, aligning to top level	*/

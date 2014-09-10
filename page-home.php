@@ -9,6 +9,11 @@
  */
 
 ?>
+
+<div class="woven">
+<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/woven.png" alt="home page" />
+</div>
+
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <div class="grid grid-pad intro-home main" >
