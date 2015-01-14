@@ -230,7 +230,7 @@ function remove_wp_logo() {
 add_action( 'wp_before_admin_bar_render', 'remove_wp_logo' );
 
 
-//	Remove p tags from images
+//	Remove p tags from images http://www.faqoverflow.com/wordpress/7090.html
 
 function filter_ptags_on_images($content)
 {
