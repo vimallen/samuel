@@ -74,6 +74,7 @@ header img  {
 footer  {
         border-top: 1px dashed #444;
         padding-top: 1em;
+		padding-bottom: 1em;
         clear: both;
 }
 
@@ -189,6 +190,10 @@ time p    {
 
 
 @media only screen and (min-width: 768px) /* 48em */{
+	
+header	{
+		margin-bottom: 1em;
+}
 
 #menu-nav-main-1    {
                     position: absolute;
