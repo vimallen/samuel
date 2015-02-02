@@ -7,6 +7,11 @@
  * @since 		Starkers 4.0
  */
 ?>
+<div class="woven">
+<img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/woven.png" alt="home page" />
+</div>
+
+
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 
