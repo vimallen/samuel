@@ -21,4 +21,17 @@ Tags: 			dark, simple
 @import	"sass/components/menu";
 @import	"sass/components/nav";
 
-
+.icon-logo {
+    width: 250px;
+    height: 115px;
+	float: left;
+	padding-right: 20px;
+	margin: 20px 0;
+	
+    > svg {
+        display: inline-block;
+        width: 250px;
+        height: 115px;
+        vertical-align: middle;
+    }
+}

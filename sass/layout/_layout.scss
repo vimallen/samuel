@@ -172,7 +172,7 @@ time p    {
 }
 
 #menu-nav-main-1 li:hover a{
-    background:#ccc;
+    background:ivory;
     text-decoration:underline;
 }
 
@@ -219,9 +219,9 @@ ul.sub-menu	{
 
 @media only screen and (min-width: 48em) /* 768px */ {
 
-[class='col-1-2'] {
+[class='col-1-3'] {
 	float: left;
-	/* width: 50%; */
+	width: 25%;
   padding-right: $pad;
   .grid &:last-of-type {
   	padding-right: $pad;
