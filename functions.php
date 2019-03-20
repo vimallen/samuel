@@ -68,7 +68,7 @@
 		'show_ui' => true,
 		'capability_type' => 'post',
 		'hierarchical' => false,
-		'rewrite' => array('slug' => 'recipes'),
+		'rewrite' => array('slug' => 'contacts'),
 		'query_var' => true,
 		'supports' => array(
 		'title',
